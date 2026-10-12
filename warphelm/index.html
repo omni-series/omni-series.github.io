@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omni Warp Helm - Windows ネイティブ超低遅延マウス・キーボード共有 ＆ 画面ミラーリング・画面OCR</title>
+    <meta name="description" content="マウス1つで複数台のPCをシームレスに操舵。さらに1台のPCでも大画面・マルチモニタ作業を革新する最前面アプリ入替、画面OCR、超低遅延画面ミラーリング、UAC対応を統合。">
+    <link rel="canonical" href="https://omni-series.github.io/warphelm/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="Omni Warp Helm">
+    <meta property="og:url" content="https://omni-series.github.io/warphelm/">
+    <meta property="og:title" content="Omni Warp Helm - Windows ネイティブ超低遅延マウス・キーボード共有 ＆ 画面ミラーリング・画面OCR">
+    <meta property="og:description" content="マウス1つで複数台のPCをシームレスに操舵。超軽量設計、通信の暗号化、管理者ダイアログ対応、画面ミラーリング、画面文字読み取り、リモート直接編集。">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Omni Warp Helm - Windows ネイティブ超低遅延マウス・キーボード共有">
+    <meta name="twitter:description" content="超低遅延マウス・キーボード共有 ＆ 画面ミラーリング ＆ 画面OCR ＆ リモートファイル編集。Windows 11 / 10 対応。">
+    
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="images/icons/favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+
+    <!-- Navigation -->
+    <nav class="glass-nav sticky top-0 z-50 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+            <div class="flex items-center space-x-3 shrink-0">
+                <a href="../" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold transition" title="Omni Series ポータルへ">
+                    <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+                    <span>Omni Series</span>
+                </a>
+                <a href="index.html" class="flex items-center space-x-2.5 hover:opacity-90 transition">
+                    <img src="images/icons/logo.svg" alt="Omni Warp Helm Logo" width="34" height="34" class="w-8 h-8 shrink-0">
+                    <span class="font-extrabold text-xl tracking-tight text-slate-900">Omni Warp Helm</span>
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-7 text-sm font-medium text-slate-600">
+                <a href="#features" class="hover:text-blue-600 transition" data-i18n="nav.features">特徴</a>
+                <a href="#mirror" class="hover:text-blue-600 transition" data-i18n="nav.mirror">画面ミラー</a>
+                <a href="#remote-edit" class="hover:text-blue-600 transition" data-i18n="nav.remote_edit">リモート編集</a>
+                <a href="editions.html" class="hover:text-blue-600 transition" data-i18n="nav.editions">エディション</a>
+                <a href="support.html" class="hover:text-blue-600 transition" data-i18n="nav.support">サポート</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="flex items-center gap-0.5 text-xs font-semibold border border-slate-200 rounded-full p-0.5 bg-white" role="group" aria-label="Language">
+                    <button type="button" class="lang-btn px-2.5 py-1 rounded-full is-active" data-set-lang="ja" aria-pressed="true">JA</button>
+                    <button type="button" class="lang-btn px-2.5 py-1 rounded-full" data-set-lang="en">EN</button>
+                </div>
+                <a href="editions.html" class="hidden sm:inline-block text-xs font-semibold text-slate-600 hover:text-blue-600 border border-slate-200 rounded-full px-3 py-1.5 bg-white transition" data-i18n="nav.pricing">料金プラン</a>
+                <a href="https://www.microsoft.com/store/apps" target="_blank" rel="noopener" class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-blue-700 shadow-sm transition whitespace-nowrap" data-i18n="nav.get">無料で入手</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="gradient-hero text-white py-20 px-4 hero-pattern relative overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-200 text-xs font-semibold mb-6">
+                <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse-subtle"></span>
+                <span data-i18n="hero.badge">Windows 11 / 10 専用・超軽量設計</span>
+            </div>
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight mb-6" data-i18n-html="hero.title">
+                マウス1つで、複数台のPCを<br class="hidden sm:inline">
+                <span class="bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">シームレスに操舵する。</span>
+            </h1>
+            <p class="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed" data-i18n-html="hero.sub">
+                Windows に最適化された超低遅延マウス・キーボード共有。外部クラウドを経由せず、同一Wi-Fi・LAN内だけで安全に通信。<br class="hidden sm:inline">
+                さらに <strong class="text-white">画面ミラーリング</strong>・<strong class="text-white">画面OCR</strong>・<strong class="text-white">リモート直接編集</strong>、1台のPCでも大画面・マルチモニタを革新する <strong class="text-white">最前面アプリ入替・モニタ間ジャンプ</strong> まで完備。
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://www.microsoft.com/store/apps" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold shadow-lg shadow-blue-600/30 transition flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.901-1.799"/></svg>
+                    <span data-i18n="hero.store_btn">Microsoft Store で入手（無料）</span>
+                </a>
+                <a href="#features" class="w-full sm:w-auto px-7 py-3.5 bg-slate-800/80 hover:bg-slate-700/80 border border-slate-600/50 text-slate-200 rounded-xl font-semibold transition" data-i18n="hero.features_btn">
+                    主要機能を見る ↓
+                </a>
+            </div>
+
+            <!-- Architecture Badges -->
+            <div class="mt-14 pt-8 border-t border-slate-800/80 grid grid-cols-2 md:grid-cols-4 gap-4 text-xs font-medium text-slate-300">
+                <div class="flex items-center justify-center gap-2 p-2.5 rounded-lg bg-slate-800/40 border border-slate-700/40">
+                    <span class="text-cyan-400 font-bold" data-i18n="badge.cpp">⚡ 超軽量・高速</span> <span data-i18n="badge.cpp_desc">動作が軽く追加ソフト不要</span>
+                </div>
+                <div class="flex items-center justify-center gap-2 p-2.5 rounded-lg bg-slate-800/40 border border-slate-700/40">
+                    <span class="text-indigo-400 font-bold" data-i18n="badge.aes">🔒 高度な暗号化（AES-256）</span> <span data-i18n="badge.aes_desc">クラウド非経由・同一LAN内完結</span>
+                </div>
+                <div class="flex items-center justify-center gap-2 p-2.5 rounded-lg bg-slate-800/40 border border-slate-700/40">
+                    <span class="text-blue-400 font-bold" data-i18n="badge.uac">🛡️ 管理者確認・ロック対応</span> <span data-i18n="badge.uac_desc">確認ダイアログでも操作が止まらない</span>
+                </div>
+                <div class="flex items-center justify-center gap-2 p-2.5 rounded-lg bg-slate-800/40 border border-slate-700/40">
+                    <span class="text-emerald-400 font-bold" data-i18n="badge.mirror">🖥️ 画面ミラー ＆ 文字読み取り</span> <span data-i18n="badge.mirror_desc">画面投影・文字抽出・リモート編集</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Core Features Grid -->
+    <section id="features" class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2" data-i18n="features.kicker">Features</h2>
+            <p class="text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl" data-i18n="features.title">従来の共有ソフトを超える、6つの先進技術</p>
+            <p class="mt-4 text-base text-slate-600" data-i18n="features.sub">複数台のシームレス共有から、1台のPCでの大画面・マルチモニタ作業効率化までを統合。</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-5 text-xl font-bold">
+                    🚀
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2.5" data-i18n="feat.1.title">遅延を感じさせないスムーズな画面移動</h3>
+                <p class="text-sm text-slate-600 leading-relaxed" data-i18n="feat.1.desc">
+                    マウスが画面端に触れると、まるで1台のPCのマルチモニターのようにスムーズに相手PCへ移動。画面端でマウスが引っかかるストレスがなく、どこまでも自然にカーソルを行き来できます。
+                </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center mb-5 text-xl font-bold">
+                    🎯
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2.5" data-i18n="feat.2.title">1台でも快適！大画面・マルチモニタ作業支援</h3>
+                <p class="text-sm text-slate-600 leading-relaxed" data-i18n="feat.2.desc">
+                    背面のウィンドウを瞬時に表に出す「最前面アプリ入替（Ctrl+Alt+Wheel）」、指定モニタへマウスを飛ばす「マルチモニタ瞬時ジャンプ（Ctrl+数字）」、OKボタンへ寄る「ダイアログ吸着」、迷子防止「スポットライト」を標準装備。
+                </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-5 text-xl font-bold">
+                    📋
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2.5" data-i18n="feat.3.title">画面OCR ＆ クリップボード共有</h3>
+                <p class="text-sm text-slate-600 leading-relaxed" data-i18n="feat.3.desc">
+                    コピーできない画像やダイアログの文字を一瞬でテキスト化する「画面OCR」を新搭載。テキストはもちろん、画像（スクリーンショットや写真）やファイル・フォルダーの直接コピー＆ペースト（Ctrl+C / Ctrl+V）も快適に行えます。
+                </p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-600 flex items-center justify-center mb-5 text-xl font-bold">
+                    🛡️
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2.5" data-i18n="feat.4.title">管理者確認やロック画面でも操作が途切れない</h3>
+                <p class="text-sm text-slate-600 leading-relaxed" data-i18n="feat.4.desc">
+                    一般的なマウス共有ソフトでは操作不能になる「このアプリが変更を加えることを許可しますか？（管理者確認画面）」や、Windows のサインイン・ロック画面でもカーソルが止まらず、そのまま操作できます。
+                </p>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-5 text-xl font-bold">
+                    🔒
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2.5" data-i18n="feat.5.title">クラウド不要・同一ネットワーク内で完結する安心セキュリティ</h3>
+                <p class="text-sm text-slate-600 leading-relaxed" data-i18n="feat.5.desc">
+                    キー入力やコピーしたデータを高度な暗号化（AES-256）で保護。外部クラウドサーバーを一切介さず、ご家庭やオフィスのWi-Fi・LAN内だけで直接やり取りするため、パスワードや機密情報も安全です。
+                </p>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center mb-5 text-xl font-bold">
+                    📐
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2.5" data-i18n="feat.6.title">実際の机の並びに合わせられる直感的な画面配置</h3>
+                <p class="text-sm text-slate-600 leading-relaxed" data-i18n="feat.6.desc">
+                    モニターの並びを画面上でドラッグ＆ドロップして自由に配置。画面の大きさや解像度が異なるモニター同士でも段差を感じさせず、スムーズにカーソルが渡れる位置調整にも対応しています。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep Dive: Screen Mirroring & Remote Edit -->
+    <section id="mirror" class="bg-slate-900 text-white py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="inline-block px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-400/30 text-xs font-semibold mb-4" data-i18n="mirror.badge">Pro 機能</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-6" data-i18n-html="mirror.title">
+                        Client 画面へ、ウィンドウを直接<br>
+                        <span class="text-blue-400">超低遅延遠隔投影（ミラー）</span>
+                    </h2>
+                    <p class="text-slate-300 text-base leading-relaxed mb-6" data-i18n="mirror.desc">
+                        メインPCで開いている任意のアプリ画面（ブラウザ、動画、資料など）を、サブPCのディスプレイへ遅延なくストリーミング表示。サブPCの画面を、便利な外付けサブモニターのようにフル活用できます。
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                        <li class="flex items-center gap-2.5">
+                            <span class="text-cyan-400 font-bold">✓</span> <span data-i18n="mirror.li1">ウィンドウ単位で手軽に投影先を選択可能（全画面表示や画面分割にも対応）</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <span class="text-cyan-400 font-bold">✓</span> <span data-i18n="mirror.li2">画面を2分割・4分割して並べるレイアウトプリセットを搭載</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <span class="text-cyan-400 font-bold">✓</span> <span data-i18n="mirror.li3">高画質・高フレームレート（60 FPS）のスムーズな動画・画面表示</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gradient-card rounded-2xl p-6 border border-slate-700/60 shadow-2xl">
+                    <div class="flex items-center justify-between border-b border-slate-700/60 pb-3 mb-4 text-xs font-mono text-slate-400">
+                        <span>● 画面ミラーリング / 超低遅延ストリーミング</span>
+                        <span class="text-emerald-400 font-semibold">Live &lt; 16ms</span>
+                    </div>
+                    <div class="bg-slate-950 rounded-xl p-5 border border-slate-800">
+                        <div class="text-xs text-slate-400 mb-2 font-mono" data-i18n="mirror.panel_title">タスクトレイ → 画面ミラーメニュー</div>
+                        <p class="text-sm font-semibold text-slate-200 mb-3" data-i18n="mirror.panel_desc">『Visual Studio Code』を Client 画面の右半分（Right 50%）に投影</p>
+                        <div class="p-3 bg-slate-900 rounded-lg text-xs font-mono text-cyan-300 border border-slate-800/80">
+                            投影ウィンドウ: 作業用ブラウザ / 資料画面<br>
+                            画質: 1920x1080 (60 FPS スムーズ表示) -&gt; 投影先: サブPC画面
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Remote Edit Feature -->
+            <div id="remote-edit" class="grid lg:grid-cols-2 gap-12 items-center mt-20 pt-16 border-t border-slate-800">
+                <div class="order-2 lg:order-1 gradient-card rounded-2xl p-6 border border-slate-700/60 shadow-2xl">
+                    <div class="flex items-center justify-between border-b border-slate-700/60 pb-3 mb-4 text-xs font-mono text-slate-400">
+                        <span>● Explorer Context Menu Integration</span>
+                        <span class="text-blue-400 font-semibold">ダイレクト編集</span>
+                    </div>
+                    <div class="bg-slate-950 rounded-xl p-5 border border-slate-800">
+                        <div class="text-xs text-slate-400 mb-2 font-mono" data-i18n="remote.panel_title">Client PC エクスプローラー右クリック</div>
+                        <p class="text-sm font-semibold text-slate-200 mb-2" data-i18n="remote.panel_action">「OmniWarpHelm リモート編集 (Server で開く)」</p>
+                        <div class="text-xs text-slate-400 leading-relaxed font-mono" data-i18n="remote.panel_desc">
+                            手元のサブPCにあるファイルを、メインPCの高スペックなアプリケーションで直接開いて編集。保存内容はクライアントへ即時反映。手動のファイル転送は一切不要です。
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <span class="inline-block px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-400/30 text-xs font-semibold mb-4" data-i18n="remote.badge">Pro 機能</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-6" data-i18n-html="remote.title">
+                        相手側 PC のファイルを、<br>
+                        <span class="text-indigo-400">Server 側アプリで直接開いて編集</span>
+                    </h2>
+                    <p class="text-slate-300 text-base leading-relaxed mb-6" data-i18n="remote.desc">
+                        Client PC 内にあるテキスト、ソースコード、画像などのファイルを、Server PC にインストールされている使い慣れた高機能エディタで直接開いて編集。保存すると自動でクライアント側に同期されます。
+                    </p>
+                    <a href="editions.html" class="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition" data-i18n="remote.link">
+                        詳しいエディション比較を見る →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="max-w-5xl mx-auto px-4 py-20">
+        <div class="text-center mb-12">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2" data-i18n="comp.kicker">Comparison</h2>
+            <p class="text-3xl font-extrabold text-slate-900 tracking-tight" data-i18n="comp.title">他社ツールとの違い</p>
+        </div>
+        <div class="overflow-x-auto bg-white rounded-2xl border border-slate-200 shadow-sm">
+            <table class="w-full text-sm text-left comparison-table">
+                <thead class="bg-slate-100/70 text-slate-700 font-bold text-xs uppercase tracking-wider">
+                    <tr>
+                        <th class="py-4" data-i18n="comp.th.feature">機能項目</th>
+                        <th class="py-4 text-blue-600 bg-blue-50/50">Omni Warp Helm</th>
+                        <th class="py-4">Synergy</th>
+                        <th class="py-4">Barrier / Input Leap</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200">
+                    <tr>
+                        <td class="font-semibold text-slate-800" data-i18n="comp.r1.title">アーキテクチャ</td>
+                        <td class="font-bold text-blue-600 bg-blue-50/30" data-i18n="comp.r1.owh">Windows 専用超軽量設計（追加ソフト不要）</td>
+                        <td>C++ / Qt</td>
+                        <td>C++ / Qt</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold text-slate-800" data-i18n="comp.r2.title">1台でも使える便利機能 (最前面入替/ジャンプ/吸着)</td>
+                        <td class="font-bold text-blue-600 bg-blue-50/30" data-i18n="comp.r2.owh">✅ 完全搭載 (大画面・マルチモニタ最適化)</td>
+                        <td data-i18n="comp.r2.syn">❌ なし</td>
+                        <td data-i18n="comp.r2.bar">❌ なし</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold text-slate-800" data-i18n="comp.r3.title">画面OCRテキスト抽出</td>
+                        <td class="font-bold text-blue-600 bg-blue-50/30" data-i18n="comp.r3.owh">✅ 搭載 (ダイアログや画像を瞬時文字化)</td>
+                        <td data-i18n="comp.r3.syn">❌ なし</td>
+                        <td data-i18n="comp.r3.bar">❌ なし</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold text-slate-800" data-i18n="comp.r4.title">画面ミラーリング (ウィンドウ投影)</td>
+                        <td class="font-bold text-blue-600 bg-blue-50/30" data-i18n="comp.r4.owh">✅ 搭載 (高画質・スムーズな画面表示)</td>
+                        <td data-i18n="comp.r4.none">❌ なし</td>
+                        <td data-i18n="comp.r4.none">❌ なし</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold text-slate-800" data-i18n="comp.r5.title">UAC / ロック画面対応</td>
+                        <td class="font-bold text-blue-600 bg-blue-50/30" data-i18n="comp.r5.owh">✅ 完全対応 (専用常駐サービス)</td>
+                        <td data-i18n="comp.r5.syn">⚠️ 設定により不安定</td>
+                        <td data-i18n="comp.r5.bar">❌ 非対応 (操作不能)</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold text-slate-800" data-i18n="comp.r6.title">エクスプローラー連携リモート編集</td>
+                        <td class="font-bold text-blue-600 bg-blue-50/30" data-i18n="comp.r6.owh">✅ 搭載 (右クリック即時起動・保存同期)</td>
+                        <td data-i18n="comp.r4.none">❌ なし</td>
+                        <td data-i18n="comp.r4.none">❌ なし</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- System Requirements & CTA -->
+    <section class="bg-slate-100 border-t border-slate-200 py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm mb-12">
+                <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                    <span>💻</span> <span data-i18n="req.title">システム動作環境</span>
+                </h3>
+                <div class="grid sm:grid-cols-2 gap-4 text-sm text-slate-600">
+                    <div>
+                        <strong class="text-slate-800" data-i18n="req.os_label">対応 OS:</strong> <span data-i18n="req.os_val">Windows 11 / 10 (64-bit x64 / ARM64)</span>
+                    </div>
+                    <div>
+                        <strong class="text-slate-800" data-i18n="req.net_label">ネットワーク:</strong> <span data-i18n="req.net_val">同一ローカルネットワーク（有線LAN / Wi-Fi）</span>
+                    </div>
+                    <div>
+                        <strong class="text-slate-800" data-i18n="req.port_label">通信ポート:</strong> <span data-i18n="req.port_val">UDP 19850, 19852 / TCP 19851（ファイアウォール自動構成）</span>
+                    </div>
+                    <div>
+                        <strong class="text-slate-800" data-i18n="req.rt_label">外部ランタイム:</strong> <span data-i18n="req.rt_val">不要（インストール後すぐ単体で動作）</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4" data-i18n="cta.title">今すぐ、新しい操舵感を体験してください。</h2>
+                <p class="text-slate-600 mb-8 max-w-xl mx-auto" data-i18n="cta.sub">無料版（Community）は期限なし・クレジットカード不要でご利用いただけます。Pro版は7日間の無料体験付き。</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://www.microsoft.com/store/apps" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-3.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold shadow-lg shadow-blue-600/30 transition" data-i18n="cta.store_btn">
+                        Microsoft Store で入手（無料）
+                    </a>
+                    <a href="editions.html" class="w-full sm:w-auto px-6 py-3.5 bg-white hover:bg-slate-50 border border-slate-300 text-slate-700 rounded-xl font-semibold transition" data-i18n="cta.plans_btn">
+                        プラン一覧を見る
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-10 text-xs text-slate-500">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-2">
+                <img src="images/icons/logo.svg" alt="" width="20" height="20" class="w-5 h-5">
+                <span class="font-bold text-slate-700">Omni Warp Helm Project</span>
+                <span>© 2026</span>
+            </div>
+            <div class="flex space-x-6">
+                <a href="editions.html" class="hover:text-blue-600 transition" data-i18n="footer.editions">エディション</a>
+                <a href="support.html" class="hover:text-blue-600 transition" data-i18n="footer.support">サポート</a>
+                <a href="privacy.html" class="hover:text-blue-600 transition" data-i18n="footer.privacy">プライバシーポリシー</a>
+                <a href="https://github.com/omni-series" target="_blank" rel="noopener" class="hover:text-blue-600 transition" data-i18n="footer.github">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/i18n.js"></script>
+    <script>SiteI18n.init({ page: 'index' });</script>
+</body>
+</html>

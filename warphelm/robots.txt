@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://omni-series.github.io/warphelm/sitemap.xml

@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー - Omni Warp Helm</title>
+    <meta name="description" content="Omni Warp Helm における個人情報・通信データの取扱いについてのプライバシーポリシー。同一ネットワーク内直接通信、データ外部送信ゼロの原則について。">
+    <link rel="canonical" href="https://omni-series.github.io/warphelm/privacy.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="Omni Warp Helm">
+    <meta property="og:url" content="https://omni-series.github.io/warphelm/privacy.html">
+    <meta property="og:title" content="プライバシーポリシー - Omni Warp Helm">
+    <meta property="og:description" content="Omni Warp Helm における個人情報・通信データの取扱いについて。外部クラウド送信なし・同一ネットワーク内完結。">
+    <meta name="twitter:card" content="summary">
+    
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="images/icons/favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+
+    <!-- Navigation -->
+    <nav class="glass-nav sticky top-0 z-50 border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">
+            <div class="flex items-center space-x-3 shrink-0">
+                <a href="../" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold transition" title="Omni Series ポータルへ">
+                    <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+                    <span>Omni Series</span>
+                </a>
+                <a href="index.html" class="flex items-center space-x-2.5 hover:opacity-90 transition">
+                    <img src="images/icons/logo.svg" alt="" width="28" height="28" class="w-7 h-7">
+                    <span class="font-extrabold text-lg tracking-tight text-slate-900">Omni Warp Helm</span>
+                </a>
+            </div>
+            <div class="flex items-center space-x-4 sm:space-x-6 text-sm font-medium text-slate-600">
+                <a href="index.html" class="hover:text-blue-600 transition" data-i18n="nav.home">ホーム</a>
+                <a href="editions.html" class="hover:text-blue-600 transition" data-i18n="nav.editions">エディション</a>
+                <a href="support.html" class="hover:text-blue-600 transition" data-i18n="nav.support">サポート</a>
+                <div class="flex items-center gap-0.5 text-xs font-semibold border border-slate-200 rounded-full p-0.5 bg-white" role="group" aria-label="Language">
+                    <button type="button" class="lang-btn px-2.5 py-1 rounded-full is-active" data-set-lang="ja" aria-pressed="true">JA</button>
+                    <button type="button" class="lang-btn px-2.5 py-1 rounded-full" data-set-lang="en">EN</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-14">
+        <div class="bg-white rounded-2xl border border-slate-200 p-8 sm:p-12 shadow-sm">
+            <h1 class="text-3xl font-black text-slate-900 tracking-tight mb-2" data-i18n="privacy.hero.title">プライバシーポリシー</h1>
+            <p class="text-xs text-slate-400 mb-8 font-mono" data-i18n="privacy.hero.date">最終改定日: 2026年10月12日</p>
+
+            <div class="prose prose-slate max-w-none space-y-8 text-sm sm:text-base leading-relaxed text-slate-700">
+                
+                <!-- Section 1 -->
+                <section>
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-900 border-b border-slate-100 pb-2 mb-3" data-i18n="privacy.s1.title">
+                        1. 基本方針
+                    </h2>
+                    <p data-i18n="privacy.s1.p1">
+                        Omni Warp Helm Project（以下「当プロジェクト」）は、ユーザーのプライバシーとセキュリティを最優先に設計されています。本ソフトウェアはローカルネットワーク内での利用を想定したユーティリティであり、ユーザーの個人情報や入力内容を外部へ送信する機能は一切含まれていません。
+                    </p>
+                    <p data-i18n="privacy.s1.p2">
+                        当プロジェクトは、ユーザーが本ソフトウェアを安心してご利用いただけるよう、以下に定めるプライバシーポリシーを遵守します。
+                    </p>
+                </section>
+
+                <!-- Section 2 -->
+                <section>
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-900 border-b border-slate-100 pb-2 mb-3" data-i18n="privacy.s2.title">
+                        2. 収集しない情報
+                    </h2>
+                    <p data-i18n="privacy.s2.p1">
+                        Omni Warp Helm は、以下の情報を収集、蓄積、外部送信しません:
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 mt-2">
+                        <li data-i18n-html="privacy.s2.li1">
+                            <strong>キー入力内容およびマウス操作ログ:</strong> 接続先 PC への転送のみに用いられ、ディスクへの記録や外部送信は行われません。
+                        </li>
+                        <li data-i18n-html="privacy.s2.li2">
+                            <strong>クリップボード内容および転送ファイル:</strong> 暗号化されて同一ネットワーク内の端末間でのみやり取りされ、外部クラウド等を経由しません。
+                        </li>
+                        <li data-i18n-html="privacy.s2.li3">
+                            <strong>個人を特定できる情報:</strong> 氏名、メールアドレス、位置情報、デバイス固有識別子等の個人情報は一切取得しません。
+                        </li>
+                        <li data-i18n-html="privacy.s2.li4">
+                            <strong>画面文字読み取り（OCR）データ:</strong> 標準モードでは Windows に内蔵された認識エンジンを使用し、すべて端末内（オフライン）で処理されます。ユーザーが任意で「Google Gemini API 連携（高精度 AI OCR）」を有効にした場合に限り、選択した切り抜き画像が Google の API サーバーへ直接送信（HTTPS暗号化）されます。当プロジェクトのサーバーを経由・蓄積することは一切ありません。
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Section 3 -->
+                <section>
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-900 border-b border-slate-100 pb-2 mb-3" data-i18n="privacy.s3.title">
+                        3. 通信のセキュリティと暗号化
+                    </h2>
+                    <p data-i18n="privacy.s3.p1">
+                        PC 間のすべての通信（マウス・キーボード操作、クリップボード、画面ミラーデータ）は、高度な暗号化（AES-256）によって保護されます。
+                    </p>
+                    <p data-i18n="privacy.s3.p2">
+                        通信は同一ネットワーク内で直接行われ、第三者のサーバーを経由することはありません。
+                    </p>
+                </section>
+
+                <!-- Section 4 -->
+                <section>
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-900 border-b border-slate-100 pb-2 mb-3" data-i18n="privacy.s4.title">
+                        4. ウェブサイトにおけるアクセス解析
+                    </h2>
+                    <p data-i18n="privacy.s4.p1">
+                        本紹介ウェブサイトでは、サイトの利用状況の把握および利便性向上のため、Cookie を使用した一般的なアクセス解析ツールを利用する場合があります。取得されるデータは匿名化されており、個人を特定するものではありません。ブラウザの設定により Cookie を無効化することも可能です。
+                    </p>
+                </section>
+
+                <!-- Section 5 -->
+                <section>
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-900 border-b border-slate-100 pb-2 mb-3" data-i18n="privacy.s5.title">
+                        5. お問い合わせ窓口
+                    </h2>
+                    <p data-i18n="privacy.s5.p1">
+                        本プライバシーポリシーに関するご質問やご不明点は、GitHub リポジトリの Issues よりお問い合わせください。
+                    </p>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-10 text-xs text-slate-500">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-2">
+                <img src="images/icons/logo.svg" alt="" width="20" height="20" class="w-5 h-5">
+                <span class="font-bold text-slate-700">Omni Warp Helm Project</span>
+                <span>© 2026</span>
+            </div>
+            <div class="flex space-x-6">
+                <a href="index.html" class="hover:text-blue-600 transition" data-i18n="nav.home">ホーム</a>
+                <a href="editions.html" class="hover:text-blue-600 transition" data-i18n="nav.editions">エディション</a>
+                <a href="support.html" class="hover:text-blue-600 transition" data-i18n="nav.support">サポート</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/i18n.js"></script>
+    <script>SiteI18n.init({ page: 'privacy' });</script>
+</body>
+</html>
+

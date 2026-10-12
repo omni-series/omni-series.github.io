@@ -1,0 +1,39 @@
+.gradient-bg {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+.hero-pattern {
+    background-color: #0f172a;
+    background-image: radial-gradient(#1e293b 0.5px, transparent 0.5px);
+    background-size: 24px 24px;
+}
+/* 製品スクショ: 角丸を控えめにしてウィンドウ枠が欠けないようにする */
+.hero-screenshot-frame {
+    border-radius: 0.5rem; /* 8px — rounded-3xl(24px) だとタイトルバー角が切れる */
+    overflow: hidden;
+    border: 6px solid #fff;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    background-color: #e2e8f0;
+}
+.hero-screenshot-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.gallery-screenshot-frame {
+    box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.15);
+}
+.demo-video-frame video {
+    display: block;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    background-color: #0f172a;
+}
+.lang-btn {
+    min-width: 2.25rem;
+}
+.lang-btn.is-active {
+    background-color: #2563eb;
+    color: #fff;
+}
