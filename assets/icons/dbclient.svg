@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <!-- ベースパネルの微細グラデーション -->
+    <linearGradient id="fluentBlueGrad" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#0e79ff" />
+      <stop offset="45%" stop-color="#0066f5" />
+      <stop offset="100%" stop-color="#004ed0" />
+    </linearGradient>
+
+    <!-- シリンダ全体のドロップシャドウ（大型化に合わせた重厚なシャドウ） -->
+    <filter id="cylinderShadow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="28" stdDeviation="26" flood-color="#001844" flood-opacity="0.50" />
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+
+    <!-- シリンダ天面・ボディのグラデーション（金属/アクリル調） -->
+    <linearGradient id="cylinderBodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#f0f5ff" />
+      <stop offset="85%" stop-color="#d6e6ff" />
+      <stop offset="100%" stop-color="#b8d4fe" />
+    </linearGradient>
+
+    <!-- シリンダアクセントライン（深みのあるブルー） -->
+    <linearGradient id="grooveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#004fc7" />
+      <stop offset="50%" stop-color="#0066f5" />
+      <stop offset="100%" stop-color="#003b96" />
+    </linearGradient>
+  </defs>
+
+  <!-- ============================================================
+       OmniPaneExplorer 4ペインベース（完全維持）
+       ============================================================ -->
+  <g fill="url(#fluentBlueGrad)">
+    <!-- 1. 左上ペイン: 上部タブ部分 -->
+    <path d="M 20 220
+             L 91.72 131.72
+             A 40 40 0 0 1 120 120
+             L 480 120
+             L 480 66
+             C 425 66 385 45 352 18
+             C 334 5 315 0 285 0
+             L 200 0
+             A 180 180 0 0 0 20 180
+             Z" />
+
+    <!-- 2. 左上ペイン: 下部本体部分 -->
+    <path d="M 20 276.57
+             L 111.51 168.49
+             A 12 12 0 0 1 120 160
+             L 480 160
+             L 480 480
+             L 20 480
+             Z" />
+
+    <!-- 3. 右上ペイン -->
+    <path d="M 520 66
+             L 820 66
+             A 180 180 0 0 1 1000 246
+             L 1000 480
+             L 520 480
+             Z" />
+
+    <!-- 4. 左下ペイン -->
+    <path d="M 20 520
+             L 480 520
+             L 480 1000
+             L 200 1000
+             A 180 180 0 0 1 20 820
+             Z" />
+
+    <!-- 5. 右下ペイン -->
+    <path d="M 520 520
+             L 1000 520
+             L 1000 820
+             A 180 180 0 0 1 820 1000
+             L 520 1000
+             Z" />
+  </g>
+
+  <!-- ============================================================
+       データベース・シリンダ（天面位置 Y=330 固定・超大型版）
+       天面トップ中心 (500, 330) を基準に等比率スケールアップ (scale: 1.42)
+       ============================================================ -->
+  <g id="db-cylinder" transform="translate(500, 330) scale(1.42) translate(-500, -330)" filter="url(#cylinderShadow)">
+    <!-- 【下段ディスク】 -->
+    <path d="M 310 610 
+             L 310 690 
+             A 190 70 0 0 0 690 690 
+             L 690 610 
+             A 190 70 0 0 1 310 610 Z" 
+          fill="url(#cylinderBodyGrad)" />
+    <path d="M 320 690 A 180 65 0 0 0 680 690" 
+          fill="none" stroke="url(#grooveGrad)" stroke-width="12" stroke-linecap="round" />
+
+    <!-- 【中段ディスク】 -->
+    <path d="M 310 470 
+             L 310 550 
+             A 190 70 0 0 0 690 550 
+             L 690 470 
+             A 190 70 0 0 1 310 470 Z" 
+          fill="url(#cylinderBodyGrad)" />
+    <path d="M 320 550 A 180 65 0 0 0 680 550" 
+          fill="none" stroke="url(#grooveGrad)" stroke-width="12" stroke-linecap="round" />
+
+    <!-- 【上段ディスク】 -->
+    <path d="M 310 330 
+             L 310 410 
+             A 190 70 0 0 0 690 410 
+             L 690 330 
+             A 190 70 0 0 1 310 330 Z" 
+          fill="url(#cylinderBodyGrad)" />
+    <path d="M 320 410 A 180 65 0 0 0 680 410" 
+          fill="none" stroke="url(#grooveGrad)" stroke-width="12" stroke-linecap="round" />
+
+    <!-- 最上面の楕円天板（位置: Y=330 を完全維持） -->
+    <ellipse cx="500" cy="330" rx="190" ry="70" fill="#ffffff" />
+    <ellipse cx="500" cy="330" rx="150" ry="50" fill="url(#cylinderBodyGrad)" opacity="0.6" />
+  </g>
+</svg>
