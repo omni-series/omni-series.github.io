@@ -22,7 +22,7 @@
             'nav.try_op': 'OmniPane を試す',
             'hero.badge': 'Windows 11 / 10 専用・ネイティブ設計',
             'hero.title': 'Windows の可能性を極限まで引き出す、<br class="hidden sm:inline"><span class="bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">プロフェッショナルのための Omni シリーズ</span>',
-            'hero.desc': '単体で軽快に動作する専用特化ツール群と、すべてを 1 画面の多窓コックピットに集約する統合母艦 <strong>OmniPane Explorer</strong>。<br class="hidden sm:inline">無駄なランタイム依存を排除し、C++ / C# の圧倒的な高速レスポンスとローカル完結の安心感を提供します。',
+            'hero.desc': '単体で軽快に動作する専用特化ツール群と、すべてを 1 画面の多窓コックピットに集約する統合母艦 <strong>OmniPane Explorer</strong>。<br class="hidden sm:inline">無駄なランタイム依存を排除し、C++ / C# の圧倒的な高速レスポンスとローカル優先設計の安心感を提供します。',
             'hero.btn_products': '製品ラインナップを見る',
             'hero.btn_concept': '統合コンセプトを読む',
             'lineup.kicker': 'Lineup',
@@ -40,7 +40,7 @@
             'card.wh.status': '近日公開予定（v1.2.0）',
             'card.wh.title': 'Omni Warp Helm',
             'card.wh.role': '超低遅延マウス・キーボード共有 ＆ 画面ワープ',
-            'card.wh.desc': 'マウス1つで複数台のPCをシームレスに操舵。外部クラウドを介さず同一LAN内で暗号化通信。さらに1台のPCでも最前面アプリ入替、超低遅延画面ミラーリング、画面OCR、UAC管理者ダイアログ操作まで完備。',
+            'card.wh.desc': 'マウス1つで複数台のPCをシームレスに操舵。基幹の操作データは外部クラウドを介さずLAN内で直接暗号化通信。さらに1台のPCでも最前面アプリ入替、超低遅延画面ミラーリング、画面OCR、UAC管理者ダイアログ操作まで完備。',
             'card.wh.f1': '✓ 単体マルチモニタ支援（アプリ入替・ダイアログ磁石・画面端境界ロック）',
             'card.wh.f2': '✓ AES-256 暗号化通信・UAC管理者確認ダイアログ操作対応',
             'card.wh.f3': '✓ 無料の Community 版 / Pro 版（月額¥580 / 年額¥5,800）',
@@ -71,7 +71,7 @@
             'eco.c2.title': 'OmniPane が統合ハブになる',
             'eco.c2.desc': 'OmniPane Explorer を起動すると、ファイル整理しながら隣のペインで巨大CSVを解析し、別PCの画面を覗き見ることができます。',
             'eco.c3.title': 'ローカル優先・セキュア設計',
-            'eco.c3.desc': 'マウス操作やファイル処理などの基幹通信は自PCおよび同一ローカルLAN内で完結。開発者サーバーへのデータ収集や不要な外部送信は一切行いません。',
+            'eco.c3.desc': 'マウス共有・画面ミラー・ファイル処理などの基幹データはLAN内で直接P2P通信。開発者サーバーを経由したデータ収集は行いません（※AI OCRなど外部API連携はお客様が任意で設定した場合のみGoogle等へ直接通信します）。',
             'footer.copyright': '© 2026 WinSolutions. All rights reserved.'
         },
         en: {
@@ -136,7 +136,7 @@
             'eco.c2.title': 'OmniPane as the Central Hub',
             'eco.c2.desc': 'Launch OmniPane Explorer to organize files, analyze giant CSVs, and monitor other PCs side-by-side in separate panes.',
             'eco.c3.title': 'Local-First & Privacy-Focused',
-            'eco.c3.desc': 'Core input and file operations communicate directly on your local PC or private LAN. Zero developer telemetry, zero intermediate data logging.',
+            'eco.c3.desc': 'Core input and file operations communicate directly over your local LAN without intermediate developer servers (Optional AI OCR connects directly to Google API only when explicitly configured).',
             'footer.copyright': '© 2026 WinSolutions. All rights reserved.'
         }
     };
