@@ -43,7 +43,7 @@
             'card.wh.desc': 'マウス1つで複数台のPCをシームレスに操舵。外部クラウドを介さず同一LAN内で暗号化通信。さらに1台のPCでも最前面アプリ入替、超低遅延画面ミラーリング、画面OCR、UAC管理者ダイアログ操作まで完備。',
             'card.wh.f1': '✓ 単体マルチモニタ支援（アプリ入替・ダイアログ磁石・画面端境界ロック）',
             'card.wh.f2': '✓ AES-256 暗号化通信・UAC管理者確認ダイアログ操作対応',
-            'card.wh.f3': '✓ Community 版完全無料 / Pro 版（月額¥580 / 年額¥5,800）',
+            'card.wh.f3': '✓ 無料の Community 版 / Pro 版（月額¥580 / 年額¥5,800）',
             'card.wh.btn_detail': '製品詳細を見る',
             'card.wh.store_prep': 'Microsoft Store 申請準備中',
             'card.fs.status': '開発進行中',
@@ -70,8 +70,8 @@
             'eco.c1.desc': '「マウス共有だけ使いたい」「巨大CSVだけ開きたい」場合、各ツールは余計な連携なしにスタンドアロンで軽量動作します。',
             'eco.c2.title': 'OmniPane が統合ハブになる',
             'eco.c2.desc': 'OmniPane Explorer を起動すると、ファイル整理しながら隣のペインで巨大CSVを解析し、別PCの画面を覗き見ることができます。',
-            'eco.c3.title': 'ローカル完結・外部通信ゼロ',
-            'eco.c3.desc': 'すべての通信・処理は自PCおよび同一ローカルLAN内で完結。外部の謎のサーバーにデータが送信される心配は一切ありません。',
+            'eco.c3.title': 'ローカル優先・セキュア設計',
+            'eco.c3.desc': 'マウス操作やファイル処理などの基幹通信は自PCおよび同一ローカルLAN内で完結。開発者サーバーへのデータ収集や不要な外部送信は一切行いません。',
             'footer.copyright': '© 2026 WinSolutions. All rights reserved.'
         },
         en: {
@@ -87,7 +87,7 @@
             'nav.try_op': 'Try OmniPane',
             'hero.badge': 'Windows 11 / 10 Dedicated • Native Architecture',
             'hero.title': 'Unleashing the Full Power of Windows,<br class="hidden sm:inline"><span class="bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">Engineered for Demanding Professionals</span>',
-            'hero.desc': 'Dedicated high-speed tools that run standalone, combined with <strong>OmniPane Explorer</strong>, the flagship cockpit that unifies your entire workflow into one screen.<br class="hidden sm:inline">Zero heavy runtime bloat, lightning-fast C++/C# response, and 100% local privacy.',
+            'hero.desc': 'Dedicated high-speed tools that run standalone, combined with <strong>OmniPane Explorer</strong>, the flagship cockpit that unifies your entire workflow into one screen.<br class="hidden sm:inline">Zero heavy runtime bloat, lightning-fast C++/C# response, and local-first privacy.',
             'hero.btn_products': 'Explore Product Lineup',
             'hero.btn_concept': 'Read Ecosystem Concept',
             'lineup.kicker': 'Lineup',
@@ -105,10 +105,10 @@
             'card.wh.status': 'Coming Soon (v1.2.0)',
             'card.wh.title': 'Omni Warp Helm',
             'card.wh.role': 'Ultra Low-Latency KM Sharing & Screen Warp',
-            'card.wh.desc': 'Seamlessly control multiple PCs with a single mouse and keyboard. Encrypted local LAN communication with zero external servers. Plus single-PC tools: window swap, screen mirroring, OCR, and UAC prompt handling.',
+            'card.wh.desc': 'Seamlessly control multiple PCs with a single mouse and keyboard. Encrypted direct local LAN communication without intermediate cloud servers. Plus single-PC tools: window swap, screen mirroring, OCR, and UAC prompt handling.',
             'card.wh.f1': '✓ Single-PC multi-monitor tools (app swap, dialog magnet, border lock)',
             'card.wh.f2': '✓ AES-256 encryption & UAC administrator prompt support',
-            'card.wh.f3': '✓ 100% Free Community / Pro (¥580/mo or ¥5,800/yr)',
+            'card.wh.f3': '✓ Free Community / Pro (¥580/mo or ¥5,800/yr)',
             'card.wh.btn_detail': 'View Product Details',
             'card.wh.store_prep': 'Preparing for Microsoft Store',
             'card.fs.status': 'In Active Development',
@@ -135,8 +135,8 @@
             'eco.c1.desc': 'If you only need KM sharing or fast CSV filtering, each app runs independently with zero unnecessary background services.',
             'eco.c2.title': 'OmniPane as the Central Hub',
             'eco.c2.desc': 'Launch OmniPane Explorer to organize files, analyze giant CSVs, and monitor other PCs side-by-side in separate panes.',
-            'eco.c3.title': '100% Local & Zero Cloud Leaks',
-            'eco.c3.desc': 'All communication and processing stay strictly on your local PC or private LAN. No data is ever sent to unknown external servers.',
+            'eco.c3.title': 'Local-First & Privacy-Focused',
+            'eco.c3.desc': 'Core input and file operations communicate directly on your local PC or private LAN. Zero developer telemetry, zero intermediate data logging.',
             'footer.copyright': '© 2026 WinSolutions. All rights reserved.'
         }
     };
