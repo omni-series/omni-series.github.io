@@ -39,6 +39,7 @@
             <div class="hidden md:flex space-x-7 text-sm font-medium text-slate-600">
                 <a href="#features" class="hover:text-blue-600 transition" data-i18n="nav.features">特徴</a>
                 <a href="#mirror" class="hover:text-blue-600 transition" data-i18n="nav.mirror">画面ミラー</a>
+                <a href="#web-display" class="hover:text-blue-600 transition" data-i18n="nav.web_display">Webサブモニタ</a>
                 <a href="#remote-edit" class="hover:text-blue-600 transition" data-i18n="nav.remote_edit">リモート編集</a>
                 <a href="editions.html" class="hover:text-blue-600 transition" data-i18n="nav.editions">エディション</a>
                 <a href="support.html" class="hover:text-blue-600 transition" data-i18n="nav.support">サポート</a>
@@ -49,7 +50,7 @@
                     <button type="button" class="lang-btn px-2.5 py-1 rounded-full" data-set-lang="en">EN</button>
                 </div>
                 <a href="editions.html" class="hidden sm:inline-block text-xs font-semibold text-slate-600 hover:text-blue-600 border border-slate-200 rounded-full px-3 py-1.5 bg-white transition" data-i18n="nav.pricing">料金プラン</a>
-                <a href="https://www.microsoft.com/store/apps" target="_blank" rel="noopener" class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-blue-700 shadow-sm transition whitespace-nowrap" data-i18n="nav.get">無料で入手</a>
+                <a href="https://apps.microsoft.com/search?query=Omni+Warp+Helm" target="_blank" rel="noopener" class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-blue-700 shadow-sm transition whitespace-nowrap" data-i18n="nav.get">無料で入手</a>
             </div>
         </div>
     </nav>
@@ -57,9 +58,9 @@
     <!-- Hero Section -->
     <header class="gradient-hero text-white py-20 px-4 hero-pattern relative overflow-hidden">
         <div class="max-w-5xl mx-auto text-center relative z-10">
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-200 text-xs font-semibold mb-6">
-                <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse-subtle"></span>
-                <span data-i18n="hero.badge">Windows 11 / 10 専用・超軽量設計</span>
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-200 text-xs font-semibold mb-6 shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse-subtle"></span>
+                <span data-i18n="hero.badge">✨ Microsoft Store 正式認定・配信中（Windows 11 / 10）</span>
             </div>
             <h1 class="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight mb-6" data-i18n-html="hero.title">
                 マウス1つで、複数台のPCを<br class="hidden sm:inline">
@@ -67,10 +68,10 @@
             </h1>
             <p class="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed" data-i18n-html="hero.sub">
                 Windows に最適化された超低遅延マウス・キーボード共有。操作データはクラウドを介さず同一Wi-Fi・LAN内で直接安全に通信。<br class="hidden sm:inline">
-                さらに <strong class="text-white">画面ミラーリング</strong>・<strong class="text-white">画面OCR</strong>・<strong class="text-white">リモート直接編集</strong>、1台のPCでも大画面・マルチモニタを革新する <strong class="text-white">最前面アプリ入替・モニタ間ジャンプ</strong> まで完備。
+                さらに <strong class="text-white">Webサブモニタ（QR読取でiPad/スマホを画面化）</strong>・<strong class="text-white">画面ミラーリング</strong>・<strong class="text-white">画面OCR</strong>・<strong class="text-white">リモート直接編集</strong>、1台のPCでも大画面・マルチモニタを革新する <strong class="text-white">最前面アプリ入替・モニタ間ジャンプ</strong> まで完備。
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="https://www.microsoft.com/store/apps" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold shadow-lg shadow-blue-600/30 transition flex items-center justify-center gap-2">
+                <a href="https://apps.microsoft.com/search?query=Omni+Warp+Helm" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold shadow-lg shadow-blue-600/30 transition flex items-center justify-center gap-2.5">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.901-1.799"/></svg>
                     <span data-i18n="hero.store_btn">Microsoft Store で入手（無料）</span>
                 </a>
@@ -78,9 +79,13 @@
                     主要機能を見る ↓
                 </a>
             </div>
+            <p class="mt-3.5 text-xs text-slate-400 flex items-center justify-center gap-1.5">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span data-i18n="hero.store_trust">Microsoft 公式セキュリティ審査合格・安全なクリーン配信</span>
+            </p>
 
             <!-- Architecture Badges -->
-            <div class="mt-14 pt-8 border-t border-slate-800/80 grid grid-cols-2 md:grid-cols-4 gap-4 text-xs font-medium text-slate-300">
+            <div class="mt-12 pt-8 border-t border-slate-800/80 grid grid-cols-2 md:grid-cols-4 gap-4 text-xs font-medium text-slate-300">
                 <div class="flex items-center justify-center gap-2 p-2.5 rounded-lg bg-slate-800/40 border border-slate-700/40">
                     <span class="text-cyan-400 font-bold" data-i18n="badge.cpp">⚡ 超軽量・高速</span> <span data-i18n="badge.cpp_desc">動作が軽く追加ソフト不要</span>
                 </div>
@@ -91,7 +96,7 @@
                     <span class="text-blue-400 font-bold" data-i18n="badge.uac">🛡️ 管理者確認・ロック対応</span> <span data-i18n="badge.uac_desc">確認ダイアログでも操作が止まらない</span>
                 </div>
                 <div class="flex items-center justify-center gap-2 p-2.5 rounded-lg bg-slate-800/40 border border-slate-700/40">
-                    <span class="text-emerald-400 font-bold" data-i18n="badge.mirror">🖥️ 画面ミラー ＆ 文字読み取り</span> <span data-i18n="badge.mirror_desc">画面投影・文字抽出・リモート編集</span>
+                    <span class="text-emerald-400 font-bold" data-i18n="badge.web">📱 Webサブモニタ ＆ ミラー</span> <span data-i18n="badge.web_desc">QRでiPad/スマホも即画面化</span>
                 </div>
             </div>
         </div>
@@ -215,6 +220,70 @@
                 </div>
             </div>
 
+            <!-- Web Sub-Monitor Feature (NEW) -->
+            <div id="web-display" class="grid lg:grid-cols-2 gap-12 items-center mt-20 pt-16 border-t border-slate-800">
+                <div>
+                    <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-xs font-semibold mb-4" data-i18n="webdisplay.badge">NEW / Pro 機能</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-6" data-i18n-html="webdisplay.title">
+                        QRコードを読み取るだけ。<br>
+                        <span class="text-emerald-400">スマホ・iPad・Macが即サブ画面に</span>
+                    </h2>
+                    <p class="text-slate-300 text-base leading-relaxed mb-6" data-i18n="webdisplay.desc">
+                        相手端末に専用アプリのインストールは一切不要。PC画面に表示される QR コードをスマホや iPad、Mac のカメラで読み取るだけで、手元のブラウザが超低遅延なセカンドディスプレイに早変わり。資料の常時表示や動画閲覧、タッチ操作まで快適に行えます。
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                        <li class="flex items-center gap-2.5">
+                            <span class="text-emerald-400 font-bold">✓</span> <span data-i18n="webdisplay.li1">専用アプリ不要：標準ブラウザ（Safari / Chrome）でQRをスキャンするだけで即接続</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <span class="text-emerald-400 font-bold">✓</span> <span data-i18n="webdisplay.li2">自由な向き変更：スマホの横向き自動追従に加え、縦持ち固定でも画面内「🔄 90° 回転」ボタンでワンタップ横長表示</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <span class="text-emerald-400 font-bold">✓</span> <span data-i18n="webdisplay.li3">滑らかなピンチズーム：2本指で 1.0x 〜 5.0x まで無段階拡大・縮小＆パンドラッグ移動</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <span class="text-emerald-400 font-bold">✓</span> <span data-i18n="webdisplay.li4">双方向タッチ＆クリック：スマホ画面のタップ・ドラッグがそのままPC側のマウス操作にダイレクト連動</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <span class="text-emerald-400 font-bold">✓</span> <span data-i18n="webdisplay.li5">安心の暗号化PIN認証：同一LAN内での直接通信と4桁PINコード認証で外部からの不正アクセスを完全遮断</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gradient-card rounded-2xl p-6 border border-slate-700/60 shadow-2xl">
+                    <div class="flex items-center justify-between border-b border-slate-700/60 pb-3 mb-4 text-xs font-mono text-slate-400">
+                        <span data-i18n="webdisplay.panel_title">● Web サブモニタ / QRコード連携 (WarpDisplay)</span>
+                        <span class="text-emerald-400 font-semibold" data-i18n="webdisplay.panel_status">Live 30 FPS / 低遅延同期中</span>
+                    </div>
+                    <div class="bg-slate-950 rounded-xl p-5 border border-slate-800">
+                        <div class="flex items-center justify-between bg-slate-900 px-3 py-2 rounded-lg text-xs font-mono text-slate-300 border border-slate-800 mb-4">
+                            <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> 接続中 (WarpDisplay)</span>
+                            <span class="flex items-center gap-1.5 text-slate-400">
+                                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[11px]">🔄 90°</span>
+                                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[11px]">🔍 フィット</span>
+                                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[11px]">画質: 標準</span>
+                            </span>
+                        </div>
+                        <div class="space-y-2 text-xs font-mono text-slate-300">
+                            <div class="p-2.5 bg-slate-900/90 rounded border border-slate-800 flex items-center justify-between">
+                                <span class="text-cyan-400 font-semibold" data-i18n="webdisplay.panel_step1">① タスクトレイ →「Web サブモニタ」を開く</span>
+                                <span class="text-slate-500">PC側操作</span>
+                            </div>
+                            <div class="p-2.5 bg-slate-900/90 rounded border border-slate-800 flex items-center justify-between">
+                                <span class="text-indigo-400 font-semibold" data-i18n="webdisplay.panel_step2">② スマホのカメラやQRリーダーでスキャン</span>
+                                <span class="text-slate-500">PIN自動認証</span>
+                            </div>
+                            <div class="p-2.5 bg-slate-900/90 rounded border border-slate-800 flex items-center justify-between">
+                                <span class="text-emerald-400 font-semibold" data-i18n="webdisplay.panel_step3">③ 端末のブラウザで即座にPC画面が映る！</span>
+                                <span class="text-emerald-400">アプリ不要</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-[11px] text-slate-400 text-center" data-i18n="webdisplay.panel_note">
+                            ※ iPhone, iPad, Android, Mac, Chromebook 等、最新ブラウザ搭載のあらゆる端末に対応
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Remote Edit Feature -->
             <div id="remote-edit" class="grid lg:grid-cols-2 gap-12 items-center mt-20 pt-16 border-t border-slate-800">
                 <div class="order-2 lg:order-1 gradient-card rounded-2xl p-6 border border-slate-700/60 shadow-2xl">
@@ -289,6 +358,12 @@
                         <td data-i18n="comp.r4.none">❌ なし</td>
                     </tr>
                     <tr>
+                        <td class="font-semibold text-slate-800" data-i18n="comp.r7.title">スマホ・タブレットのサブモニタ化 (Web サブモニタ・QR連携)</td>
+                        <td class="font-bold text-blue-600 bg-blue-50/30" data-i18n="comp.r7.owh">✅ 搭載 (QR読取でiPad/スマホ/Macを即サブ画面化・アプリ不要)</td>
+                        <td data-i18n="comp.r7.syn">❌ なし</td>
+                        <td data-i18n="comp.r7.bar">❌ なし</td>
+                    </tr>
+                    <tr>
                         <td class="font-semibold text-slate-800" data-i18n="comp.r5.title">UAC / ロック画面対応</td>
                         <td class="font-bold text-blue-600 bg-blue-50/30" data-i18n="comp.r5.owh">✅ 正式対応 (専用常駐サービス)</td>
                         <td data-i18n="comp.r5.syn">⚠️ 設定により不安定</td>
@@ -332,7 +407,7 @@
                 <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4" data-i18n="cta.title">今すぐ、新しい操舵感を体験してください。</h2>
                 <p class="text-slate-600 mb-8 max-w-xl mx-auto" data-i18n="cta.sub">無料版（Community）は期限なし・クレジットカード不要でご利用いただけます。Pro版は7日間の無料体験付き。</p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="https://www.microsoft.com/store/apps" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-3.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold shadow-lg shadow-blue-600/30 transition" data-i18n="cta.store_btn">
+                    <a href="https://apps.microsoft.com/search?query=Omni+Warp+Helm" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-3.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold shadow-lg shadow-blue-600/30 transition" data-i18n="cta.store_btn">
                         Microsoft Store で入手（無料）
                     </a>
                     <a href="editions.html" class="w-full sm:w-auto px-6 py-3.5 bg-white hover:bg-slate-50 border border-slate-300 text-slate-700 rounded-xl font-semibold transition" data-i18n="cta.plans_btn">
