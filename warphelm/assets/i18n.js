@@ -19,6 +19,7 @@
             // Navigation & Common
             'nav.features': '特徴',
             'nav.mirror': '画面ミラー',
+            'nav.web_display': 'Webサブモニタ',
             'nav.remote_edit': 'リモート編集',
             'nav.editions': 'エディション',
             'nav.support': 'サポート',
@@ -31,10 +32,11 @@
             'footer.github': 'GitHub',
 
             // Index: Hero
-            'hero.badge': 'Windows 11 / 10 専用・超軽量設計',
+            'hero.badge': '✨ Microsoft Store 正式認定・配信中（Windows 11 / 10）',
             'hero.title': 'マウス1つで、複数台のPCを<br class="hidden sm:inline"><span class="bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">シームレスに操舵する。</span>',
-            'hero.sub': 'Windows に最適化された超低遅延マウス・キーボード共有。操作データはクラウドを介さず同一Wi-Fi・LAN内で直接安全に通信。<br class="hidden sm:inline">さらに <strong class="text-white">画面ミラーリング</strong>・<strong class="text-white">画面文字読み取り（OCR）</strong>・<strong class="text-white">リモート直接編集</strong>、1台のPCでも大画面・マルチモニター作業を劇的に快適にする <strong class="text-white">最前面アプリ切り替え・モニター間ジャンプ</strong> まで完備。',
+            'hero.sub': 'Windows に最適化された超低遅延マウス・キーボード共有。操作データはクラウドを介さず同一Wi-Fi・LAN内で直接安全に通信。<br class="hidden sm:inline">さらに <strong class="text-white">Webサブモニタ（QR読取でiPad/スマホを画面化）</strong>・<strong class="text-white">画面ミラーリング</strong>・<strong class="text-white">画面文字読み取り（OCR）</strong>・<strong class="text-white">リモート直接編集</strong>、1台のPCでも大画面・マルチモニター作業を劇的に快適にする <strong class="text-white">最前面アプリ切り替え・モニター間ジャンプ</strong> まで完備。',
             'hero.store_btn': 'Microsoft Store で入手（無料）',
+            'hero.store_trust': 'Microsoft 公式セキュリティ審査合格・安全なクリーン配信',
             'hero.features_btn': '主要機能を見る ↓',
 
             // Index: Badges
@@ -44,6 +46,8 @@
             'badge.aes_desc': '操作データはLAN内直接P2P通信',
             'badge.uac': '🛡️ 管理者確認・ロック対応',
             'badge.uac_desc': '確認ダイアログでも操作が止まらない',
+            'badge.web': '📱 Webサブモニタ ＆ ミラー',
+            'badge.web_desc': 'QRでiPad/スマホも即画面化',
             'badge.mirror': '🖥️ 画面ミラー ＆ 文字読み取り',
             'badge.mirror_desc': '画面投影・文字抽出・リモート編集',
 
@@ -73,6 +77,22 @@
             'mirror.li3': '高画質・高フレームレート（60 FPS）のスムーズな動画・画面表示',
             'mirror.panel_title': 'タスクトレイ → 画面ミラーメニュー',
             'mirror.panel_desc': '『ブラウザや資料ウィンドウ』をサブPC画面の右半分（50%）に投影',
+
+            // Index: Web Display
+            'webdisplay.badge': 'NEW / Pro 機能',
+            'webdisplay.title': 'QRコードを読み取るだけ。<br><span class="text-emerald-400">スマホ・iPad・Macが即サブ画面に</span>',
+            'webdisplay.desc': '相手端末に専用アプリのインストールは一切不要。PC画面に表示される QR コードをスマホや iPad、Mac のカメラで読み取るだけで、手元のブラウザが超低遅延なセカンドディスプレイに早変わり。資料の常時表示や動画閲覧、タッチ操作まで快適に行えます。',
+            'webdisplay.li1': '専用アプリ不要：標準ブラウザ（Safari / Chrome）でQRをスキャンするだけで即接続',
+            'webdisplay.li2': '自由な向き変更：スマホの横向き自動追従に加え、縦持ち固定でも画面内「🔄 90° 回転」ボタンでワンタップ横長表示',
+            'webdisplay.li3': '滑らかなピンチズーム：2本指で 1.0x 〜 5.0x まで無段階拡大・縮小＆パンドラッグ移動',
+            'webdisplay.li4': '双方向タッチ＆クリック：スマホ画面のタップ・ドラッグがそのままPC側のマウス操作にダイレクト連動',
+            'webdisplay.li5': '安心の暗号化PIN認証：同一LAN内での直接通信と4桁PINコード認証で外部からの不正アクセスを完全遮断',
+            'webdisplay.panel_title': 'Web サブモニタ / QRコード連携 (WarpDisplay)',
+            'webdisplay.panel_status': 'Live 30 FPS / 低遅延同期中',
+            'webdisplay.panel_step1': '① タスクトレイ →「Web サブモニタ」を開く',
+            'webdisplay.panel_step2': '② スマホのカメラやQRリーダーでスキャン',
+            'webdisplay.panel_step3': '③ 端末のブラウザで即座にPC画面が映る！',
+            'webdisplay.panel_note': '※ iPhone, iPad, Android, Mac, Chromebook 等、最新ブラウザ搭載のあらゆる端末に対応',
 
             // Index: Remote Edit
             'remote.badge': 'Pro 機能',
@@ -106,6 +126,10 @@
             'comp.r5.bar': '❌ 非対応 (操作不能になる)',
             'comp.r6.title': 'リモートファイル直接編集',
             'comp.r6.owh': '✅ 搭載 (右クリックで即時起動・保存で同期)',
+            'comp.r7.title': 'スマホ・タブレットのサブモニタ化 (Web サブモニタ・QR連携)',
+            'comp.r7.owh': '✅ 搭載 (QR読取でiPad/スマホ/Macを即サブ画面化・アプリ不要)',
+            'comp.r7.syn': '❌ なし',
+            'comp.r7.bar': '❌ なし',
 
             // Index: Requirements & CTA
             'req.title': 'システム動作環境',
@@ -148,6 +172,7 @@
             'editions.plan.pro.note': '※短期利用向けの月額プラン（¥580 / 月）も選択可能',
             'editions.plan.pro.f1': '接続可能 PC: <strong>3 台以上 無制限</strong>（複数PCをまとめて操作）',
             'editions.plan.pro.f2': '<strong>超低遅延 画面ミラーリング</strong>（ウィンドウ遠隔投影・画面分割表示）',
+            'editions.plan.pro.f_web': '<strong>Web サブモニタ（QR連携）</strong>（iPad・スマホ・Macをアプリ不要でサブ画面化）',
             'editions.plan.pro.f3': '<strong>エクスプローラー連携 リモートファイル直接編集</strong>（保存で即時同期）',
             'editions.plan.pro.f4': '<strong>管理者確認ダイアログ（UAC）・ロック画面の完全操作</strong>',
             'editions.plan.pro.f5': '<strong>画面上の文字読み取り（無制限利用）</strong>',
@@ -186,6 +211,9 @@
             'editions.table.r7.title': '超低遅延 画面ミラーリング (ウィンドウ遠隔投影)',
             'editions.table.r7.comm': '—',
             'editions.table.r7.pro': '✓（遅延のないスムーズな動画・画面表示）',
+            'editions.table.r_web.title': 'Web サブモニタ (スマホ/タブレット/Mac等のブラウザで即サブ画面化・QR連携)',
+            'editions.table.r_web.comm': '—',
+            'editions.table.r_web.pro': '✓（QR読取だけで即接続・90°回転・ピンチズーム対応）',
             'editions.table.r8.title': 'ミニマップ操作 ＆ 画面分割レイアウト (2分割・4分割)',
             'editions.table.r8.comm': '—',
             'editions.table.r8.pro': '✓（2分割・4分割・自由配置）',
@@ -259,6 +287,8 @@
             'support.qs.s2_desc': 'サブPCのタスクバーにあるトレイアイコンを右クリックし、「待機中」状態になっていることを確認します。',
             'support.qs.s3_title': '3. メインPC のレイアウトで配置',
             'support.qs.s3_desc': 'メインPCでトレイアイコンから「画面レイアウト設定 (Ctrl+Alt+F11)」を開き、モニターを実際のデスク配置に合わせてドラッグして「保存・適用」をクリックします。',
+            'support.qs.web_title': 'スマホやタブレットをサブモニタにする場合',
+            'support.qs.web_desc': 'PCのタスクトレイアイコンを右クリックして「Web サブモニタ（QRコード）...」を選択し、表示されたQRコードをスマホやiPadのカメラで読み取るだけで、ブラウザが即座にワイヤレス外部ディスプレイとして動作します。アプリのインストールは一切不要です。',
             'support.faq.title': 'トラブルシューティング & FAQ',
             'support.faq.q1': 'Q. カーソルが相手側 PC に移動しません',
             'support.faq.a1_p': '以下をご確認ください:',
@@ -314,6 +344,7 @@
             // Navigation & Common
             'nav.features': 'Features',
             'nav.mirror': 'Screen Mirror',
+            'nav.web_display': 'Web Display',
             'nav.remote_edit': 'Remote Edit',
             'nav.editions': 'Editions',
             'nav.support': 'Support',
@@ -326,10 +357,11 @@
             'footer.github': 'GitHub',
 
             // Index: Hero
-            'hero.badge': 'Windows 11 / 10 Dedicated Lightweight Design',
+            'hero.badge': '✨ Officially Certified & Available on Microsoft Store (Windows 11 / 10)',
             'hero.title': 'Steer multiple PCs seamlessly<br class="hidden sm:inline"><span class="bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">with a single mouse.</span>',
-            'hero.sub': 'Optimized ultra-low latency mouse & keyboard sharing. Core operation data communicates directly within your Wi-Fi/local network without external clouds.<br class="hidden sm:inline">Complete with <strong class="text-white">Screen Mirroring</strong>, <strong class="text-white">Screen Text Recognition (OCR)</strong>, <strong class="text-white">Remote File Editing</strong>, and single-PC tools like <strong class="text-white">Foreground App Swap & Monitor Warp</strong>.',
+            'hero.sub': 'Optimized ultra-low latency mouse & keyboard sharing. Core operation data communicates directly within your Wi-Fi/local network without external clouds.<br class="hidden sm:inline">Packed with <strong class="text-white">Web Sub-Monitor (Instant QR display for iPad/Phone)</strong>, <strong class="text-white">Screen Mirroring</strong>, <strong class="text-white">Screen Text Recognition (OCR)</strong>, <strong class="text-white">Remote File Editing</strong>, and single-PC tools like <strong class="text-white">Foreground App Swap & Monitor Warp</strong>.',
             'hero.store_btn': 'Get on Microsoft Store (Free)',
+            'hero.store_trust': 'Microsoft Certified & Security Scanned — Clean & Safe Installation',
             'hero.features_btn': 'Explore Features ↓',
 
             // Index: Badges
@@ -339,6 +371,8 @@
             'badge.aes_desc': 'Direct P2P over local network',
             'badge.uac': '🛡️ Admin Prompts & Lock Screen',
             'badge.uac_desc': 'Control never freezes on dialogs',
+            'badge.web': '📱 Web Sub-Monitor',
+            'badge.web_desc': 'Turn iPad/Phones into displays via QR',
             'badge.mirror': '🖥️ Screen Mirror & Text Capture',
             'badge.mirror_desc': 'Window casting, OCR & remote edit',
 
@@ -368,6 +402,22 @@
             'mirror.li3': 'Crisp, high-frame-rate (60 FPS) smooth video streaming',
             'mirror.panel_title': 'Screen Mirror Settings',
             'mirror.panel_desc': 'Projecting browser/document window to the right half (50%) of client screen',
+
+            // Index: Web Display
+            'webdisplay.badge': 'NEW / Pro Feature',
+            'webdisplay.title': 'Scan a QR Code.<br><span class="text-emerald-400">Instantly Turn Phones, iPads & Macs into Extra Screens</span>',
+            'webdisplay.desc': 'No client app installation required. Simply scan the on-screen QR code using your smartphone, iPad, or Mac camera to instantly transform your browser into an ultra-low latency wireless secondary monitor. Supports continuous 60/30 FPS streaming, orientation controls, and touch interactions.',
+            'webdisplay.li1': 'Zero Client Installs: Scan the QR code with any standard browser (Safari / Chrome) and start streaming instantly',
+            'webdisplay.li2': 'Flexible Orientation: Automatically adapts to landscape orientation, plus a one-tap HUD "🔄 90°" button for portrait-locked phones',
+            'webdisplay.li3': 'Smooth Pinch-to-Zoom: Continuous 1.0x to 5.0x two-finger pinch zoom and panning to inspect fine text and details',
+            'webdisplay.li4': 'Bidirectional Touch & Click: Tap, drag, or scroll on your mobile touchscreen to directly control your Windows PC',
+            'webdisplay.li5': 'Encrypted Local Security: 4-digit PIN authentication and direct local Wi-Fi/Ethernet streaming completely block unauthorized access',
+            'webdisplay.panel_title': 'Web Sub-Monitor / QR Code Streaming (WarpDisplay)',
+            'webdisplay.panel_status': 'Live 30 FPS / Low Latency',
+            'webdisplay.panel_step1': '1. Right-click tray -> Open "Web Sub-Monitor"',
+            'webdisplay.panel_step2': '2. Scan the QR code with phone / tablet camera',
+            'webdisplay.panel_step3': '3. PC screen displays immediately in your browser!',
+            'webdisplay.panel_note': '※ Compatible with iPhones, iPads, Android devices, Macs, Chromebooks and any modern browser',
 
             // Index: Remote Edit
             'remote.badge': 'Pro Feature',
@@ -401,6 +451,10 @@
             'comp.r5.bar': '❌ Not supported (Freezes control)',
             'comp.r6.title': 'Direct Remote File Editing',
             'comp.r6.owh': '✅ Supported (Right-click open & auto-sync)',
+            'comp.r7.title': 'Mobile / Tablet Sub-Monitor (Web Display & QR Code)',
+            'comp.r7.owh': '✅ Supported (Turn iPads/Phones/Macs into screens via QR, zero app install)',
+            'comp.r7.syn': '❌ None',
+            'comp.r7.bar': '❌ None',
 
             // Index: Requirements & CTA
             'req.title': 'System Requirements',
@@ -443,6 +497,7 @@
             'editions.plan.pro.note': '※ Monthly plan ($3.99 / mo) is also available for flexible use',
             'editions.plan.pro.f1': 'Supported PCs: <strong>3+ PCs (Unlimited)</strong>',
             'editions.plan.pro.f2': '<strong>Ultra-low latency Screen Mirroring</strong> (Window casting & split screen)',
+            'editions.plan.pro.f_web': '<strong>Web Sub-Monitor (QR Streaming)</strong> (Turn iPads, phones, Macs into screens without apps)',
             'editions.plan.pro.f3': '<strong>Direct Remote File Editing</strong> (Instant sync on save)',
             'editions.plan.pro.f4': '<strong>Full Control on Admin Dialogs (UAC) & Lock Screens</strong>',
             'editions.plan.pro.f5': '<strong>Screen Text Recognition (Unlimited usage)</strong>',
@@ -481,6 +536,9 @@
             'editions.table.r7.title': 'Ultra-low Latency Screen Mirroring (Window Casting)',
             'editions.table.r7.comm': '—',
             'editions.table.r7.pro': '✓ (Smooth high-frame-rate streaming)',
+            'editions.table.r_web.title': 'Web Sub-Monitor (Instant browser display via QR code for tablets/phones/Macs)',
+            'editions.table.r_web.comm': '—',
+            'editions.table.r_web.pro': '✓ (Scan & play, 90° rotation, pinch zoom, touch input)',
             'editions.table.r8.title': 'Minimap Control & Split Screen Layouts (2x1, 2x2)',
             'editions.table.r8.comm': '—',
             'editions.table.r8.pro': '✓ (2-way, 4-way, freeform)',
@@ -554,6 +612,8 @@
             'support.qs.s2_desc': 'As long as both PCs are on the same Wi-Fi or local network, OmniWarpHelm will detect them automatically without manual IP configuration.',
             'support.qs.s3_title': '3. Arrange Screen Layout',
             'support.qs.s3_desc': 'Open "Display Layout Settings (Ctrl+Alt+F11)" from the tray menu and drag the screens to match your physical desk arrangement, then save.',
+            'support.qs.web_title': 'Using Phones or Tablets as a Secondary Screen',
+            'support.qs.web_desc': 'Right-click the Omni Warp Helm tray icon and select "Web Sub-Monitor (QR Code)...". Scan the displayed QR code with your smartphone or iPad camera. Your device browser will immediately function as a wireless secondary display. No app download is needed on the client device.',
             'support.faq.title': 'Troubleshooting & FAQ',
             'support.faq.q1': 'Q. The cursor does not move to the other PC',
             'support.faq.a1_p': 'Please check the following:',
