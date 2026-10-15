@@ -204,19 +204,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="gradient-card rounded-2xl p-6 border border-slate-700/60 shadow-2xl">
-                    <div class="flex items-center justify-between border-b border-slate-700/60 pb-3 mb-4 text-xs font-mono text-slate-400">
-                        <span>● 画面ミラーリング / 超低遅延ストリーミング</span>
-                        <span class="text-emerald-400 font-semibold">Live &lt; 16ms</span>
-                    </div>
-                    <div class="bg-slate-950 rounded-xl p-5 border border-slate-800">
-                        <div class="text-xs text-slate-400 mb-2 font-mono" data-i18n="mirror.panel_title">タスクトレイ → 画面ミラーメニュー</div>
-                        <p class="text-sm font-semibold text-slate-200 mb-3" data-i18n="mirror.panel_desc">『Visual Studio Code』を Client 画面の右半分（Right 50%）に投影</p>
-                        <div class="p-3 bg-slate-900 rounded-lg text-xs font-mono text-cyan-300 border border-slate-800/80">
-                            投影ウィンドウ: 作業用ブラウザ / 資料画面<br>
-                            画質: 1920x1080 (60 FPS スムーズ表示) -&gt; 投影先: サブPC画面
-                        </div>
-                    </div>
+                <div class="rounded-2xl overflow-hidden border border-slate-700/60 shadow-2xl bg-slate-950/60 p-2 group">
+                    <img src="images/screenshots/ja_02_screen_mirror.png"
+                         data-i18n-src="mirror.img_src"
+                         data-i18n-alt="mirror.img_alt"
+                         alt="画面ミラーリング：タイトルバーを落とすだけ！ノートPCが外付け画面に早変わり"
+                         width="1920" height="1080"
+                         class="w-full h-auto rounded-xl shadow-lg transition duration-300 group-hover:scale-[1.01]"
+                         loading="lazy">
                 </div>
             </div>
 
@@ -286,18 +281,14 @@
 
             <!-- Remote Edit Feature -->
             <div id="remote-edit" class="grid lg:grid-cols-2 gap-12 items-center mt-20 pt-16 border-t border-slate-800">
-                <div class="order-2 lg:order-1 gradient-card rounded-2xl p-6 border border-slate-700/60 shadow-2xl">
-                    <div class="flex items-center justify-between border-b border-slate-700/60 pb-3 mb-4 text-xs font-mono text-slate-400">
-                        <span>● Explorer Context Menu Integration</span>
-                        <span class="text-blue-400 font-semibold">ダイレクト編集</span>
-                    </div>
-                    <div class="bg-slate-950 rounded-xl p-5 border border-slate-800">
-                        <div class="text-xs text-slate-400 mb-2 font-mono" data-i18n="remote.panel_title">Client PC エクスプローラー右クリック</div>
-                        <p class="text-sm font-semibold text-slate-200 mb-2" data-i18n="remote.panel_action">「OmniWarpHelm リモート編集 (Server で開く)」</p>
-                        <div class="text-xs text-slate-400 leading-relaxed font-mono" data-i18n="remote.panel_desc">
-                            手元のサブPCにあるファイルを、メインPCの高スペックなアプリケーションで直接開いて編集。保存内容はクライアントへ即時反映。手動のファイル転送や共有設定は不要です。
-                        </div>
-                    </div>
+                <div class="order-2 lg:order-1 rounded-2xl overflow-hidden border border-slate-700/60 shadow-2xl bg-slate-950/60 p-2 group">
+                    <img src="images/screenshots/ja_05_remote_edit.png"
+                         data-i18n-src="remote.img_src"
+                         data-i18n-alt="remote.img_alt"
+                         alt="クリップボード同期＆リモート直接編集：テキスト・画像・ファイルを瞬時共有"
+                         width="1920" height="1080"
+                         class="w-full h-auto rounded-xl shadow-lg transition duration-300 group-hover:scale-[1.01]"
+                         loading="lazy">
                 </div>
                 <div class="order-1 lg:order-2">
                     <span class="inline-block px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-400/30 text-xs font-semibold mb-4" data-i18n="remote.badge">Pro 機能</span>
@@ -407,7 +398,7 @@
                 <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4" data-i18n="cta.title">今すぐ、新しい操舵感を体験してください。</h2>
                 <p class="text-slate-600 mb-8 max-w-xl mx-auto" data-i18n="cta.sub">無料版（Community）は期限なし・クレジットカード不要でご利用いただけます。Pro版は7日間の無料体験付き。</p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="https://apps.microsoft.com/search?query=Omni+Warp+Helm" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-3.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold shadow-lg shadow-blue-600/30 transition" data-i18n="cta.store_btn">
+                    <a href="https://www.microsoft.com/store/apps" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-3.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold shadow-lg shadow-blue-600/30 transition" data-i18n="cta.store_btn">
                         Microsoft Store で入手（無料）
                     </a>
                     <a href="editions.html" class="w-full sm:w-auto px-6 py-3.5 bg-white hover:bg-slate-50 border border-slate-300 text-slate-700 rounded-xl font-semibold transition" data-i18n="cta.plans_btn">

@@ -75,6 +75,8 @@
             'mirror.li1': 'ウィンドウ単位で手軽に投影先を選択可能（全画面表示や画面分割にも対応）',
             'mirror.li2': '画面を2分割・4分割して並べるレイアウトプリセットを搭載',
             'mirror.li3': '高画質・高フレームレート（60 FPS）のスムーズな動画・画面表示',
+            'mirror.img_src': 'images/screenshots/ja_02_screen_mirror.png',
+            'mirror.img_alt': '画面ミラーリング：タイトルバーを落とすだけ！ノートPCが外付け画面に早変わり',
             'mirror.panel_title': 'タスクトレイ → 画面ミラーメニュー',
             'mirror.panel_desc': '『ブラウザや資料ウィンドウ』をサブPC画面の右半分（50%）に投影',
 
@@ -102,6 +104,8 @@
             'remote.panel_action': '「OmniWarpHelm リモート編集 (メインPCで開く)」',
             'remote.panel_desc': 'サブPCにあるファイルを、メインPCの高機能なソフトで直接開いて編集。保存内容はサブPCへ即時反映されます。ファイルの事前転送や複雑な共有設定は不要です。',
             'remote.link': '詳しいエディション比較を見る →',
+            'remote.img_src': 'images/screenshots/ja_05_remote_edit.png',
+            'remote.img_alt': 'クリップボード同期＆リモート直接編集：テキスト・画像・ファイルを瞬時共有',
 
             // Index: Comparison
             'comp.kicker': 'Comparison',
@@ -400,6 +404,8 @@
             'mirror.li1': 'Cast specific app windows with full-screen and split-screen support',
             'mirror.li2': 'Built-in presets for 2-way and 4-way split layouts',
             'mirror.li3': 'Crisp, high-frame-rate (60 FPS) smooth video streaming',
+            'mirror.img_src': 'images/screenshots/en_02_screen_mirror.png',
+            'mirror.img_alt': 'Wireless Second Display: Drag Title Bar to Beam Any Window to Your Laptop',
             'mirror.panel_title': 'Screen Mirror Settings',
             'mirror.panel_desc': 'Projecting browser/document window to the right half (50%) of client screen',
 
@@ -427,6 +433,8 @@
             'remote.panel_action': 'Select "OmniWarpHelm Remote Edit (Open on Main PC)"',
             'remote.panel_desc': 'Open files stored on your secondary PC directly inside your main PC apps. Saves are instantly synced back without manual file transfers or shared folder setups.',
             'remote.link': 'See Detailed Edition Comparison →',
+            'remote.img_src': 'images/screenshots/en_05_remote_edit.png',
+            'remote.img_alt': 'Clipboard & Remote Edit: Sync Text, Images & Files Across PCs. Direct Remote File Editing',
 
             // Index: Comparison
             'comp.kicker': 'Comparison',
@@ -689,6 +697,13 @@
             const val = t(lang, key);
             if (val !== undefined && val !== null) {
                 el.setAttribute('alt', val);
+            }
+        });
+        document.querySelectorAll('[data-i18n-src]').forEach((el) => {
+            const key = el.getAttribute('data-i18n-src');
+            const val = t(lang, key);
+            if (val !== undefined && val !== null) {
+                el.setAttribute('src', val);
             }
         });
         document.querySelectorAll('[data-i18n-href]').forEach((el) => {
