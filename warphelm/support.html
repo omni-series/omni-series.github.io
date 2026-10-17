@@ -184,6 +184,22 @@
                         通常のマウス・キーボード共有、画面ミラー、ファイル転送、標準の文字読み取り（Windows標準エンジン）は、同一ローカルネットワーク内および端末内のみで直接通信・処理され、外部サーバーを経由しません。<br><br>※外部通信が発生するのは、(1) Microsoft Store による標準のライセンス認証、および (2) 設定で「高精度 AI OCR（Gemini API 連携）」を任意で有効にした場合の Google API への直接通信（HTTPS暗号化）のみです。開発者独自の収集サーバー等は存在せず、操作内容や個人情報が収集されることはありません。
                     </div>
                 </div>
+
+                <!-- FAQ 6 -->
+                <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                    <h3 class="text-base font-bold text-slate-900 mb-2" data-i18n="support.faq.q6">
+                        Q. iPad やスマホを、PCのメイン作業画面を邪魔しない「完全独立サブモニター」として使えますか？
+                    </h3>
+                    <div class="text-sm text-slate-600 leading-relaxed space-y-2">
+                        <p data-i18n-html="support.faq.a6_p1">
+                            はい、Windows用の仮想ディスプレイドライバ（VDD）を導入することで可能です。<br>
+                            無料・オープンソースの <a href="https://github.com/itsmikethetech/Virtual-Display-Driver" target="_blank" rel="noopener" class="text-indigo-600 hover:underline font-semibold">Virtual Display Driver (IddCx)</a> などをインストールすると、物理モニターを増設せずにPC内に「仮想的な拡張デスクトップ」を作成できます。
+                        </p>
+                        <p data-i18n="support.faq.a6_p2">
+                            OmniWarpHelm は仮想ディスプレイ（<code>\\.\DISPLAYn</code>）を自動認識し、その仮想画面だけを手元の iPad やスマホのブラウザへ低遅延配信します。メイン画面の作業を続けながら、手元の画面で別アプリを独立してタッチ操作できます。
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
