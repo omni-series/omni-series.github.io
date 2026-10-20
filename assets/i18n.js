@@ -72,7 +72,9 @@
             'eco.c2.desc': 'OmniPane Explorer を起動すると、ファイル整理しながら隣のペインで巨大CSVを解析し、別PCの画面を覗き見ることができます。',
             'eco.c3.title': 'ローカル優先・セキュア設計',
             'eco.c3.desc': 'マウス共有・画面ミラー・ファイル処理などの基幹データはLAN内で直接P2P通信。開発者サーバーを経由したデータ収集は行いません（※AI OCRなど外部API連携はお客様が任意で設定した場合のみGoogle等へ直接通信します）。',
-            'footer.copyright': '© 2026 WinSolutions. All rights reserved.'
+            'footer.copyright': '© 2026 WinSolutions. All rights reserved.',
+            'links.op_store': 'https://apps.microsoft.com/detail/9pfdz0fn43vx?hl=ja-jp&gl=JP',
+            'links.wh_store': 'https://apps.microsoft.com/search?query=Omni+Warp+Helm&hl=ja-jp&gl=JP'
         },
         en: {
             'meta.title': 'Omni Series - Integrated Workspace & High-Performance Utilities for Windows',
@@ -137,7 +139,9 @@
             'eco.c2.desc': 'Launch OmniPane Explorer to organize files, analyze giant CSVs, and monitor other PCs side-by-side in separate panes.',
             'eco.c3.title': 'Local-First & Privacy-Focused',
             'eco.c3.desc': 'Core input and file operations communicate directly over your local LAN without intermediate developer servers (Optional AI OCR connects directly to Google API only when explicitly configured).',
-            'footer.copyright': '© 2026 WinSolutions. All rights reserved.'
+            'footer.copyright': '© 2026 WinSolutions. All rights reserved.',
+            'links.op_store': 'https://apps.microsoft.com/detail/9pfdz0fn43vx?hl=en-us&gl=US',
+            'links.wh_store': 'https://apps.microsoft.com/search?query=Omni+Warp+Helm&hl=en-us&gl=US'
         }
     };
 
@@ -176,6 +180,11 @@
         document.querySelectorAll('[data-i18n-alt]').forEach(el => {
             const key = el.getAttribute('data-i18n-alt');
             if (dict[key] !== undefined) el.setAttribute('alt', dict[key]);
+        });
+
+        document.querySelectorAll('[data-i18n-href]').forEach(el => {
+            const key = el.getAttribute('data-i18n-href');
+            if (dict[key] !== undefined) el.setAttribute('href', dict[key]);
         });
 
         // Update toggle buttons
