@@ -49,7 +49,7 @@
       <stop offset="100%" stop-color="#b45309" stop-opacity="0" />
     </radialGradient>
 
-    <!-- 3. 水平光芒グラデーション -->
+    <!-- 3. 光芒グラデーション (主軸) -->
     <linearGradient id="rayH" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#f59e0b" stop-opacity="0" />
       <stop offset="35%" stop-color="#fde047" stop-opacity="0.8" />
@@ -58,7 +58,7 @@
       <stop offset="100%" stop-color="#f59e0b" stop-opacity="0" />
     </linearGradient>
 
-    <!-- 4. 垂直光芒グラデーション -->
+    <!-- 4. 光芒グラデーション (副軸) -->
     <linearGradient id="rayV" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#f59e0b" stop-opacity="0" />
       <stop offset="35%" stop-color="#fde047" stop-opacity="0.8" />
@@ -124,7 +124,7 @@
   </g>
 
   <!-- ============================================================
-       中央の光（黄色系の濃淡・レンズフレア - 拡大版）
+       中央の光（黄色系の濃淡・レンズフレア - X字光芒）
        中心座標: (500, 500)
        ============================================================ -->
   <g id="center-light" transform="translate(500, 500)">
@@ -134,23 +134,25 @@
     <!-- 2. メイン光輪グロー (r=260) -->
     <circle r="260" fill="url(#sunGlow)" />
 
-    <!-- 3. 十字の光芒（ダイヤモンド・スターバースト形状） -->
-    <!-- 水平光条 (幅 1000px, 中心厚み 52px) -->
-    <path d="M -500 0 Q 0 -26 500 0 Q 0 26 -500 0 Z" fill="url(#rayH)" />
-    <!-- 垂直光条 (高さ 1000px, 中心厚み 52px) -->
-    <path d="M 0 -500 Q -26 0 0 500 Q 26 0 0 -500 Z" fill="url(#rayV)" />
+    <!-- 3. X字ダイナミック光芒 (45度回転: 4ペインの各中心へ向かう光) -->
+    <g transform="rotate(45)">
+      <!-- 対角光条 1 (幅 1000px, 中心厚み 52px) -->
+      <path d="M -500 0 Q 0 -26 500 0 Q 0 26 -500 0 Z" fill="url(#rayH)" />
+      <!-- 対角光条 2 (高さ 1000px, 中心厚み 52px) -->
+      <path d="M 0 -500 Q -26 0 0 500 Q 26 0 0 -500 Z" fill="url(#rayV)" />
 
-    <!-- 4. 鋭い高輝度光線（中心ライン） -->
-    <line x1="-460" y1="0" x2="460" y2="0" stroke="url(#rayH)" stroke-width="6" stroke-linecap="round" />
-    <line x1="0" y1="-460" x2="0" y2="460" stroke="url(#rayV)" stroke-width="6" stroke-linecap="round" />
-
-    <!-- 5. 45度斜めの微細きらめき光芒 (長さ 440px) -->
-    <g transform="rotate(45)" opacity="0.7">
-      <path d="M -220 0 Q 0 -12 220 0 Q 0 12 -220 0 Z" fill="url(#rayH)" />
-      <path d="M 0 -220 Q -12 0 0 220 Q 12 0 0 -220 Z" fill="url(#rayV)" />
+      <!-- 鋭い高輝度光線（中心ライン） -->
+      <line x1="-460" y1="0" x2="460" y2="0" stroke="url(#rayH)" stroke-width="6" stroke-linecap="round" />
+      <line x1="0" y1="-460" x2="0" y2="460" stroke="url(#rayV)" stroke-width="6" stroke-linecap="round" />
     </g>
 
-    <!-- 6. 中心強光コア（純白熱光 ＆ レモンイエローオーラ） -->
+    <!-- 4. サブの微細きらめき光芒（水平・垂直のアクセント） -->
+    <g opacity="0.45">
+      <path d="M -180 0 Q 0 -9 180 0 Q 0 9 -180 0 Z" fill="url(#rayH)" />
+      <path d="M 0 -180 Q -9 0 0 180 Q 9 0 0 -180 Z" fill="url(#rayV)" />
+    </g>
+
+    <!-- 5. 中心強光コア（純白熱光 ＆ レモンイエローオーラ） -->
     <circle r="95" fill="#fef08a" fill-opacity="0.8" />
     <circle r="55" fill="#ffffff" fill-opacity="0.98" />
   </g>
