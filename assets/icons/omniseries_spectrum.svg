@@ -98,18 +98,18 @@
        中心座標: (500, 500)
        ============================================================ -->
   <g id="center-reticle" transform="translate(500, 500)">
-    <!-- 外周シアン半透明サークル (r=88, #00f2fe 47% opacity) -->
-    <circle r="88" fill="#00f2fe" fill-opacity="0.47" />
+    <!-- 外周シアン半透明サークル (r=264, #00f2fe 47% opacity - 3倍) -->
+    <circle r="264" fill="#00f2fe" fill-opacity="0.47" />
 
-    <!-- 中心ホワイト光核 (r=35, #ffffff 94% opacity) -->
-    <circle r="35" fill="#ffffff" fill-opacity="0.94" />
+    <!-- 中心ホワイト光核 (r=105, #ffffff 94% opacity - 3倍) -->
+    <circle r="105" fill="#ffffff" fill-opacity="0.94" />
 
-    <!-- 長十字クロスヘア (長さ 274px, 幅 6px, 端点ラウンド) -->
-    <line x1="-137" y1="0" x2="137" y2="0" stroke="#ffffff" stroke-opacity="0.78" stroke-width="6" stroke-linecap="round" />
-    <line x1="0" y1="-137" x2="0" y2="137" stroke="#ffffff" stroke-opacity="0.78" stroke-width="6" stroke-linecap="round" />
+    <!-- 長十字クロスヘア (長さ 822px, 幅 18px, 端点ラウンド - 3倍) -->
+    <line x1="-411" y1="0" x2="411" y2="0" stroke="#ffffff" stroke-opacity="0.78" stroke-width="18" stroke-linecap="round" />
+    <line x1="0" y1="-411" x2="0" y2="411" stroke="#ffffff" stroke-opacity="0.78" stroke-width="18" stroke-linecap="round" />
 
-    <!-- 中心太十字クロスヘア (長さ 138px, 幅 10px, 端点ラウンド) -->
-    <line x1="-69" y1="0" x2="69" y2="0" stroke="#ffffff" stroke-width="10" stroke-linecap="round" />
-    <line x1="0" y1="-69" x2="0" y2="69" stroke="#ffffff" stroke-width="10" stroke-linecap="round" />
+    <!-- 中心太十字クロスヘア (長さ 414px, 幅 30px, 端点ラウンド - 3倍) -->
+    <line x1="-207" y1="0" x2="207" y2="0" stroke="#ffffff" stroke-width="30" stroke-linecap="round" />
+    <line x1="0" y1="-207" x2="0" y2="207" stroke="#ffffff" stroke-width="30" stroke-linecap="round" />
   </g>
 </svg>
