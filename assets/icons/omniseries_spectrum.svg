@@ -29,17 +29,47 @@
       <stop offset="100%" stop-color="#954395" />
     </linearGradient>
 
-    <!-- Central Lens Flare Glow (Optional smooth gradient) -->
-    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+    <!-- ============================================================
+         黄色系の濃淡グラデーション（リアルな発光・レンズフレア）
+         ============================================================ -->
+    <!-- 1. メイン光輪グロー (中心白 -> レモン黄 -> アンバーゴールド -> 透明) -->
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
-      <stop offset="35%" stop-color="#00f2fe" stop-opacity="0.9" />
-      <stop offset="70%" stop-color="#00f2fe" stop-opacity="0.45" />
-      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+      <stop offset="22%" stop-color="#fffbeb" stop-opacity="0.95" />
+      <stop offset="48%" stop-color="#fde047" stop-opacity="0.8" />
+      <stop offset="72%" stop-color="#eab308" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#ca8a04" stop-opacity="0" />
     </radialGradient>
+
+    <!-- 2. 広域ソフトフレア (外周アンビエント光) -->
+    <radialGradient id="outerFlare" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.65" />
+      <stop offset="45%" stop-color="#f59e0b" stop-opacity="0.3" />
+      <stop offset="80%" stop-color="#d97706" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#b45309" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- 3. 水平光芒グラデーション -->
+    <linearGradient id="rayH" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0" />
+      <stop offset="35%" stop-color="#fde047" stop-opacity="0.75" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="65%" stop-color="#fde047" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- 4. 垂直光芒グラデーション -->
+    <linearGradient id="rayV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0" />
+      <stop offset="35%" stop-color="#fde047" stop-opacity="0.75" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="65%" stop-color="#fde047" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0" />
+    </linearGradient>
   </defs>
 
   <!-- ============================================================
-       Omni Series Spectrum Icon (4-Pane Multi-Color + Center Reticle)
+       Omni Series Spectrum 4-Pane
        ============================================================ -->
   <g id="omni-spectrum-panes">
     <!-- 1. 左上ペイン: 上部タブ部分 -->
@@ -94,22 +124,34 @@
   </g>
 
   <!-- ============================================================
-       中央レティクル（操舵・ターゲット照準 ＆ 光輪）
+       中央の光（黄色系の濃淡・レンズフレア）
        中心座標: (500, 500)
        ============================================================ -->
-  <g id="center-reticle" transform="translate(500, 500)">
-    <!-- 外周シアン半透明サークル (r=264, #00f2fe 47% opacity - 3倍) -->
-    <circle r="264" fill="#00f2fe" fill-opacity="0.47" />
+  <g id="center-light" transform="translate(500, 500)">
+    <!-- 1. 広域アンビエント光 (r=300) -->
+    <circle r="300" fill="url(#outerFlare)" />
 
-    <!-- 中心ホワイト光核 (r=105, #ffffff 94% opacity - 3倍) -->
-    <circle r="105" fill="#ffffff" fill-opacity="0.94" />
+    <!-- 2. メイン光輪グロー (r=180) -->
+    <circle r="180" fill="url(#sunGlow)" />
 
-    <!-- 長十字クロスヘア (長さ 822px, 幅 18px, 端点ラウンド - 3倍) -->
-    <line x1="-411" y1="0" x2="411" y2="0" stroke="#ffffff" stroke-opacity="0.78" stroke-width="18" stroke-linecap="round" />
-    <line x1="0" y1="-411" x2="0" y2="411" stroke="#ffffff" stroke-opacity="0.78" stroke-width="18" stroke-linecap="round" />
+    <!-- 3. 十字の光芒（ダイヤモンド・スターバースト形状） -->
+    <!-- 水平光条 (幅 760px, 中心厚み 36px) -->
+    <path d="M -380 0 Q 0 -18 380 0 Q 0 18 -380 0 Z" fill="url(#rayH)" />
+    <!-- 垂直光条 (高さ 760px, 中心厚み 36px) -->
+    <path d="M 0 -380 Q -18 0 0 380 Q 18 0 0 -380 Z" fill="url(#rayV)" />
 
-    <!-- 中心太十字クロスヘア (長さ 414px, 幅 30px, 端点ラウンド - 3倍) -->
-    <line x1="-207" y1="0" x2="207" y2="0" stroke="#ffffff" stroke-width="30" stroke-linecap="round" />
-    <line x1="0" y1="-207" x2="0" y2="207" stroke="#ffffff" stroke-width="30" stroke-linecap="round" />
+    <!-- 4. 鋭い高輝度光線（中心ライン） -->
+    <line x1="-340" y1="0" x2="340" y2="0" stroke="url(#rayH)" stroke-width="4" stroke-linecap="round" />
+    <line x1="0" y1="-340" x2="0" y2="340" stroke="url(#rayV)" stroke-width="4" stroke-linecap="round" />
+
+    <!-- 5. 45度斜めの微細きらめき光芒 -->
+    <g transform="rotate(45)" opacity="0.65">
+      <path d="M -150 0 Q 0 -8 150 0 Q 0 8 -150 0 Z" fill="url(#rayH)" />
+      <path d="M 0 -150 Q -8 0 0 150 Q 8 0 0 -150 Z" fill="url(#rayV)" />
+    </g>
+
+    <!-- 6. 中心強光コア（純白熱光 ＆ レモンイエローオーラ） -->
+    <circle r="65" fill="#fef08a" fill-opacity="0.75" />
+    <circle r="38" fill="#ffffff" fill-opacity="0.95" />
   </g>
 </svg>
