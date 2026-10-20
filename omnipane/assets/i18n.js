@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
     'use strict';
 
     const STORAGE_KEY = 'ope-site-lang';
@@ -100,7 +100,7 @@
             'editions.kicker': 'Editions',
             'editions.hero.title': '用途に合わせて選べる<br class="hidden sm:inline">3つのエディション',
             'editions.hero.sub': '無料の Community で多窓が軽くなるか試し、Standard・Professional で4ペインと統合タブをフル活用。',
-            'editions.official': '<strong>Microsoft Store 正式版:</strong> Community は無料でご利用いただけます。Standard / Professional は Store 内アドオン（月払い・年払い）で購入できます。最新の価格表示は Store の商品ページをご確認ください。',
+            'editions.official': '<strong>Microsoft Store 正式版:</strong> Community は無料でご利用いただけます。Standard / Professional は Store 内アドオン（月払い・年払い）で購入できます。※ 実際の販売価格・税額はお使いの環境の Microsoft Store にてご確認ください。',
             'editions.community.tag': 'Community',
             'editions.community.price': '無料',
             'editions.community.desc': '無料で2ペイン＋タグ・メモの入口。多窓が軽くなるか試せます。',
@@ -189,7 +189,7 @@
             'editions.faq.a4': 'Standard / Professional は 1 ライセンスにつき 1 台の PC です。別の PC で使う場合は、元の PC でデバイス登録を解除するか、追加ライセンスが必要です。登録できない PC では Community 相当に制限されます。',
             'editions.faq.q5': 'ダウングレードするとデータは消えますか？',
             'editions.faq.a5': '.ope やタグ・メモなどのデータは端末に残ります。自動削除はしません。Community や Standard の上限を超える分は、再アップグレードするまで閲覧・編集できないことがあります。',
-            'links.store': 'https://www.microsoft.com/ja-jp/p/omnipane-explorer/9pfdz0fn43vx?utm_source=omniweb&utm_medium=cta',
+            'links.store': 'https://apps.microsoft.com/detail/9pfdz0fn43vx?hl=ja-jp&gl=JP&utm_source=omniweb&utm_medium=cta',
             'links.issues': 'https://github.com/omni-series/omni-series.github.io/issues'
         },
         en: {
@@ -287,7 +287,7 @@
             'editions.kicker': 'Editions',
             'editions.hero.title': 'Three editions for<br class="hidden sm:inline">different workflows',
             'editions.hero.sub': 'Start free with Community to see if fewer windows help, then unlock four panes and integrated tabs with Standard or Professional.',
-            'editions.official': '<strong>Available on Microsoft Store:</strong> Community is free. Standard and Professional are in-app add-ons (monthly or annual billing). See the Store product page for the latest pricing in your region.',
+            'editions.official': '<strong>Available on Microsoft Store:</strong> Community is free. Standard and Professional are in-app add-ons (monthly or annual billing). * Prices shown in USD are reference pricing. Taxes and final pricing in your local currency will be displayed on the Microsoft Store.',
             'editions.community.tag': 'Community',
             'editions.community.price': 'Free',
             'editions.community.desc': 'Free entry with two panes plus tags and memos. See if fewer windows are enough for you.',
@@ -301,7 +301,7 @@
             'editions.standard.badge': 'Recommended',
             'editions.standard.tag': 'Standard',
             'editions.standard.price': 'Subscription',
-            'editions.standard.rate': '¥980/month or ¥9,800/year (tax excluded)',
+            'editions.standard.rate': '$6.99/month or $69.99/year (reference pricing)',
             'editions.standard.desc': 'Four panes and integrated tabs in one screen.',
             'editions.standard.c1': 'Everything in Community',
             'editions.standard.c2': '<strong>Four panes</strong> and 12 layout presets',
@@ -314,7 +314,7 @@
             'editions.standard.cta': 'Buy on Store',
             'editions.pro.tag': 'Professional',
             'editions.pro.price': 'Subscription',
-            'editions.pro.rate': '¥1,850/month or ¥18,500/year (tax excluded)',
+            'editions.pro.rate': '$12.99/month or $129.99/year (reference pricing)',
             'editions.pro.desc': 'For power users who treat their layout as an asset.',
             'editions.pro.c1': 'Everything in Standard',
             'editions.pro.c2': 'Batch replace with <strong>regular expressions</strong> and rule-based rename',
@@ -376,7 +376,7 @@
             'editions.faq.a4': 'Standard and Professional are one PC per license. To use another PC, deactivate the current device or buy another license. A PC that cannot be registered runs with Community limits.',
             'editions.faq.q5': 'Is my data deleted if I downgrade?',
             'editions.faq.a5': 'No. .ope files, tags, and memos stay on the device. Amounts above the Community or Standard quota may be blocked from viewing or editing until you upgrade again.',
-            'links.store': 'https://apps.microsoft.com/detail/9pfdz0fn43vx?utm_source=omniweb&utm_medium=cta',
+            'links.store': 'https://apps.microsoft.com/detail/9pfdz0fn43vx?hl=en-us&gl=US&utm_source=omniweb&utm_medium=cta',
             'links.issues': 'https://github.com/omni-series/omni-series.github.io/issues'
         }
     };
