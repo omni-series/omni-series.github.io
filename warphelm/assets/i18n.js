@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
     'use strict';
 
     const STORAGE_KEY = 'owh-site-lang';
@@ -493,7 +493,7 @@
             'editions.hero.kicker': 'Pricing & Editions',
             'editions.hero.title': 'Choose the Right Edition for You',
             'editions.hero.sub': 'Core 2-PC sharing and single-PC large monitor tools are <strong>free forever in Community edition</strong>.<br class="hidden sm:inline">For power users requiring screen mirroring, remote edit, unlimited text recognition, and 3+ PCs, upgrade to <strong>Pro edition</strong>.',
-            'editions.notice': '<strong>Official Microsoft Store Distribution:</strong> Community is free forever with no expiration. Pro is available via Microsoft Store subscriptions ($39.99/yr or $3.99/mo) with a 7-day free trial.',
+            'editions.notice': '<strong>Official Microsoft Store Distribution:</strong> Community is free forever with no expiration. Pro is available via Microsoft Store subscriptions ($49.99/yr or $4.99/mo) with a 7-day free trial. * Pricing is based on Japanese Yen (JPY) and converted by Microsoft Store for international purchases.',
             'editions.plan.comm.badge': 'Free Edition',
             'editions.plan.comm.desc': 'Complete set of tools for single-PC large monitor workflows and everyday 2-PC mouse/keyboard sharing.',
             'editions.plan.comm.period': 'Free Forever (No credit card required)',
@@ -510,9 +510,9 @@
             'editions.plan.pro.recommend': '7-Day Free Trial / Recommended',
             'editions.plan.pro.badge': 'Professional Edition',
             'editions.plan.pro.desc': 'The definitive tier unlocking Screen Mirroring, Remote Edit, admin prompt control, 3+ PCs, and unlimited text recognition.',
-            'editions.plan.pro.price': '$39.99',
-            'editions.plan.pro.period': '/ yr (~$3.33/mo, 2 months free)',
-            'editions.plan.pro.note': '※ Monthly plan ($3.99 / mo) is also available for flexible use',
+            'editions.plan.pro.price': '$49.99',
+            'editions.plan.pro.period': '/ yr (~$4.16/mo, converted from ¥5,800 JPY)',
+            'editions.plan.pro.note': '※ Monthly plan ($4.99 / mo, converted from ¥580 JPY) is also available',
             'editions.plan.pro.f1': 'Supported PCs: <strong>3+ PCs (Unlimited)</strong>',
             'editions.plan.pro.f2': '<strong>Ultra-low latency Screen Mirroring</strong> (Window casting & split screen)',
             'editions.plan.pro.f_web': '<strong>Web Sub-Monitor (QR Streaming)</strong> (Turn iPads, phones, Macs into screens without apps)',
@@ -598,7 +598,7 @@
             'editions.table.grp5': 'Plans & Maintenance',
             'editions.table.r19.title': 'Pricing Model',
             'editions.table.r19.comm': 'Completely Free ($0)',
-            'editions.table.r19.pro': '$39.99 / yr (~$3.33/mo) or $3.99 / mo',
+            'editions.table.r19.pro': '$49.99 / yr (~$4.16/mo) or $4.99 / mo (converted from JPY)',
             'editions.table.r20.title': 'Free Trial Period',
             'editions.table.r20.comm': 'Indefinite (Free forever)',
             'editions.table.r20.pro': '7-day Free Trial',
