@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <!-- 4-Pane Spectrum Gradients -->
+    <!-- Top-Left: Fluent Royal Blue -->
+    <linearGradient id="gradTopLeft" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#0c77fe" />
+      <stop offset="50%" stop-color="#076df6" />
+      <stop offset="100%" stop-color="#0766eb" />
+    </linearGradient>
+
+    <!-- Top-Right: Electric Cyan / Aqua -->
+    <linearGradient id="gradTopRight" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#02bcfc" />
+      <stop offset="50%" stop-color="#00b7f7" />
+      <stop offset="100%" stop-color="#00b4f3" />
+    </linearGradient>
+
+    <!-- Bottom-Left: Violet / Indigo Blue -->
+    <linearGradient id="gradBottomLeft" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#5066f8" />
+      <stop offset="50%" stop-color="#4d61f6" />
+      <stop offset="100%" stop-color="#4c5bed" />
+    </linearGradient>
+
+    <!-- Bottom-Right: Magenta / Orchid Purple -->
+    <linearGradient id="gradBottomRight" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#9a499a" />
+      <stop offset="50%" stop-color="#974698" />
+      <stop offset="100%" stop-color="#954395" />
+    </linearGradient>
+
+    <!-- Central Lens Flare Glow (Optional smooth gradient) -->
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="35%" stop-color="#00f2fe" stop-opacity="0.9" />
+      <stop offset="70%" stop-color="#00f2fe" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- ============================================================
+       Omni Series Spectrum Icon (4-Pane Multi-Color + Center Reticle)
+       ============================================================ -->
+  <g id="omni-spectrum-panes">
+    <!-- 1. 左上ペイン: 上部タブ部分 -->
+    <path fill="url(#gradTopLeft)"
+          d="M 20 220
+             L 91.72 131.72
+             A 40 40 0 0 1 120 120
+             L 480 120
+             L 480 66
+             C 425 66 385 45 352 18
+             C 334 5 315 0 285 0
+             L 200 0
+             A 180 180 0 0 0 20 180
+             Z" />
+
+    <!-- 2. 左上ペイン: 下部本体部分 -->
+    <path fill="url(#gradTopLeft)"
+          d="M 20 276.57
+             L 111.51 168.49
+             A 12 12 0 0 1 120 160
+             L 480 160
+             L 480 480
+             L 20 480
+             Z" />
+
+    <!-- 3. 右上ペイン (十字溝幅: 40px -> X: 520〜, Y: 480まで) -->
+    <path fill="url(#gradTopRight)"
+          d="M 520 66
+             L 820 66
+             A 180 180 0 0 1 1000 246
+             L 1000 480
+             L 520 480
+             Z" />
+
+    <!-- 4. 左下ペイン (十字溝幅: 40px -> Y: 520〜, X: 〜480) -->
+    <path fill="url(#gradBottomLeft)"
+          d="M 20 520
+             L 480 520
+             L 480 1000
+             L 200 1000
+             A 180 180 0 0 1 20 820
+             Z" />
+
+    <!-- 5. 右下ペイン (十字溝幅: 40px -> X: 520〜, Y: 520〜) -->
+    <path fill="url(#gradBottomRight)"
+          d="M 520 520
+             L 1000 520
+             L 1000 820
+             A 180 180 0 0 1 820 1000
+             L 520 1000
+             Z" />
+  </g>
+
+  <!-- ============================================================
+       中央レティクル（操舵・ターゲット照準 ＆ 光輪）
+       中心座標: (500, 500)
+       ============================================================ -->
+  <g id="center-reticle" transform="translate(500, 500)">
+    <!-- 外周シアン半透明サークル (r=88, #00f2fe 47% opacity) -->
+    <circle r="88" fill="#00f2fe" fill-opacity="0.47" />
+
+    <!-- 中心ホワイト光核 (r=35, #ffffff 94% opacity) -->
+    <circle r="35" fill="#ffffff" fill-opacity="0.94" />
+
+    <!-- 長十字クロスヘア (長さ 274px, 幅 6px, 端点ラウンド) -->
+    <line x1="-137" y1="0" x2="137" y2="0" stroke="#ffffff" stroke-opacity="0.78" stroke-width="6" stroke-linecap="round" />
+    <line x1="0" y1="-137" x2="0" y2="137" stroke="#ffffff" stroke-opacity="0.78" stroke-width="6" stroke-linecap="round" />
+
+    <!-- 中心太十字クロスヘア (長さ 138px, 幅 10px, 端点ラウンド) -->
+    <line x1="-69" y1="0" x2="69" y2="0" stroke="#ffffff" stroke-width="10" stroke-linecap="round" />
+    <line x1="0" y1="-69" x2="0" y2="69" stroke="#ffffff" stroke-width="10" stroke-linecap="round" />
+  </g>
+</svg>
