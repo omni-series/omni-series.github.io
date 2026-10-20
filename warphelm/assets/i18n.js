@@ -338,7 +338,7 @@
             'privacy.s4.p1': '本紹介ウェブサイトでは、サイトの利用状況の把握および利便性向上のため、Cookie を使用した一般的なアクセス解析ツールを利用する場合があります。取得されるデータは匿名化されており、個人を特定するものではありません。ブラウザの設定により Cookie を無効化することも可能です。',
             'privacy.s5.title': '5. お問い合わせ窓口',
             'privacy.s5.p1': '本プライバシーポリシーに関するご質問やご不明点は、GitHub リポジトリの Issues よりお問い合わせください。',
-            'links.store': 'https://apps.microsoft.com/search?query=Omni+Warp+Helm&hl=ja-jp&gl=JP'
+            'links.store': 'https://apps.microsoft.com/detail/9NHZ91828X9C?hl=ja-jp&gl=JP'
         },
 
         en: {
@@ -674,7 +674,7 @@
             'privacy.s4.p1': 'This product website may use standard anonymous cookies to assess website traffic and improve usability. All collected data is anonymized and cannot identify individual users. You may disable cookies via your browser settings.',
             'privacy.s5.title': '5. Contact Information',
             'privacy.s5.p1': 'If you have any questions or feedback regarding this Privacy Policy, please contact us via GitHub repository Issues.',
-            'links.store': 'https://apps.microsoft.com/search?query=Omni+Warp+Helm&hl=en-us&gl=US'
+            'links.store': 'https://apps.microsoft.com/detail/9NHZ91828X9C?hl=en-us&gl=US'
         }
     };
 

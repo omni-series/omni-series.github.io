@@ -15,6 +15,69 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" href="assets/icons/omniseries_spectrum.svg" type="image/svg+xml">
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://omni-series.github.io/#organization",
+          "name": "Omni Series",
+          "url": "https://omni-series.github.io/",
+          "description": "High-performance productivity and utility software suite for Windows."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://omni-series.github.io/#warphelm",
+          "name": "Omni Warp Helm",
+          "operatingSystem": "Windows 10, Windows 11",
+          "applicationCategory": "UtilitiesApplication",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "description": "Ultra-low latency software KVM, wireless display extension for iPad/phones, and edit history time-travel tool for Windows. Local-first P2P encrypted.",
+          "url": "https://omni-series.github.io/warphelm/",
+          "downloadUrl": "https://apps.microsoft.com/detail/9NHZ91828X9C",
+          "publisher": {
+            "@id": "https://omni-series.github.io/#organization"
+          },
+          "featureList": [
+            "Seamless Dual PC Mouse & Keyboard Sharing (KVM)",
+            "Zero-Touch Client Update over LAN",
+            "Web-based Second Display for iPad and Tablets",
+            "Time Anchor Snapshot Restoration",
+            "Mixed-DPI Monitor Link Editor"
+          ]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://omni-series.github.io/#omnipane",
+          "name": "OmniPane Explorer",
+          "operatingSystem": "Windows 10, Windows 11",
+          "applicationCategory": "UtilitiesApplication",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "description": "Multi-pane workspace explorer for Windows, streamlining file management with customizable 4-pane views and profile switching.",
+          "url": "https://omni-series.github.io/omnipane/",
+          "downloadUrl": "https://apps.microsoft.com/detail/9pfdz0fn43vx",
+          "publisher": {
+            "@id": "https://omni-series.github.io/#organization"
+          },
+          "featureList": [
+            "4-Pane Integrated Workspace",
+            "Named Profile Save and Instant Restore",
+            "Fast Navigation and Reduced Window Switching"
+          ]
+        }
+      ]
+    }
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .hero-pattern {
@@ -214,7 +277,7 @@
                         <span data-i18n="card.wh.btn_detail">製品詳細を見る</span>
                         <span>→</span>
                     </a>
-                    <a href="https://apps.microsoft.com/search?query=Omni+Warp+Helm" target="_blank" rel="noopener" class="text-xs font-bold bg-indigo-600 text-white px-3.5 py-2 rounded-lg hover:bg-indigo-700 transition" data-i18n="card.wh.btn_store" data-i18n-href="links.wh_store">
+                    <a href="https://apps.microsoft.com/detail/9NHZ91828X9C" target="_blank" rel="noopener" class="text-xs font-bold bg-indigo-600 text-white px-3.5 py-2 rounded-lg hover:bg-indigo-700 transition" data-i18n="card.wh.btn_store" data-i18n-href="links.wh_store">
                         Store で入手
                     </a>
                 </div>
