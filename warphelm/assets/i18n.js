@@ -321,7 +321,7 @@
 
             // Privacy
             'privacy.hero.title': 'プライバシーポリシー',
-            'privacy.hero.date': '最終改定日: 2026年10月12日',
+            'privacy.hero.date': '最終改定日: 2026年10月25日',
             'privacy.s1.title': '1. 基本方針',
             'privacy.s1.p1': 'Omni Warp Helm Project（以下「当プロジェクト」）は、ユーザーのプライバシーとセキュリティを最優先に設計されています。本ソフトウェアはローカルネットワーク内での直接通信を主軸とするユーティリティであり、ユーザーの個人情報や日常操作ログを当プロジェクトのサーバーへ送信・収集する機能は含まれていません。',
             'privacy.s1.p2': '当プロジェクトは、ユーザーが本ソフトウェアを安心してご利用いただけるよう、以下に定めるプライバシーポリシーを遵守します。',
@@ -334,9 +334,15 @@
             'privacy.s3.title': '3. 通信のセキュリティと暗号化',
             'privacy.s3.p1': 'PC 間のすべての通信（マウス・キーボード操作、クリップボード、画面ミラーデータ）は、高度な暗号化（AES-256）によって保護されます。',
             'privacy.s3.p2': '通信は同一ネットワーク内で直接行われ、第三者のサーバーを経由することはありません。',
-            'privacy.s4.title': '4. ウェブサイトにおけるアクセス解析',
+            'privacy.colleague.title': '4. 同僚との共有（Pro）について',
+            'privacy.colleague.p1': '同僚との共有を有効にした場合に限り、次の情報を、ペアリングした同僚の PC へ送ります。',
+            'privacy.colleague.li1': 'この PC の表示名と、ペアリング用の端末の鍵（公開鍵）',
+            'privacy.colleague.li2': '利用者が選んだウィンドウの画面、または利用者が選んだファイル',
+            'privacy.colleague.p2': '画面とファイルは、受け取る側の利用者が確認画面で許可した場合にだけ送ります。通信は同じネットワーク内の PC 同士で直接行い、暗号化します。当プロジェクトや第三者のサーバーは経由せず、当プロジェクトがこれらの情報を収集・保存することはありません。',
+            'privacy.colleague.p3': 'ペアリングした相手の一覧と、共有の記録（いつ、誰と、何を共有したか）は、利用者の PC の中にだけ保存します。',
+            'privacy.s4.title': '5. ウェブサイトにおけるアクセス解析',
             'privacy.s4.p1': '本紹介ウェブサイトでは、サイトの利用状況の把握および利便性向上のため、Cookie を使用した一般的なアクセス解析ツールを利用する場合があります。取得されるデータは匿名化されており、個人を特定するものではありません。ブラウザの設定により Cookie を無効化することも可能です。',
-            'privacy.s5.title': '5. お問い合わせ窓口',
+            'privacy.s5.title': '6. お問い合わせ窓口',
             'privacy.s5.p1': '本プライバシーポリシーに関するご質問やご不明点は、GitHub リポジトリの Issues よりお問い合わせください。',
             'links.store': 'https://apps.microsoft.com/detail/9NHZ91828X9C?hl=ja-jp&gl=JP'
         },
@@ -657,7 +663,7 @@
 
             // Privacy
             'privacy.hero.title': 'Privacy Policy',
-            'privacy.hero.date': 'Last Revised: October 12, 2026',
+            'privacy.hero.date': 'Last Revised: October 25, 2026',
             'privacy.s1.title': '1. Fundamental Principles',
             'privacy.s1.p1': 'The OmniWarpHelm Project is built with user privacy and data security as our top priorities. Designed primarily for local-network utilities, the software does not collect, track, or leak personal data.',
             'privacy.s1.p2': 'We strictly adhere to this Privacy Policy to ensure complete trust and safety for all users.',
@@ -670,9 +676,15 @@
             'privacy.s3.title': '3. Network Security & Encryption',
             'privacy.s3.p1': 'All inter-PC communications (mouse/keyboard events, clipboard, screen mirror frames) are protected with strong AES-256 encryption.',
             'privacy.s3.p2': 'All communications occur directly peer-to-peer over the local network without passing through third-party servers.',
-            'privacy.s4.title': '4. Website Analytics',
+            'privacy.colleague.title': '4. Colleague Sharing (Pro)',
+            'privacy.colleague.p1': 'Only when Colleague Sharing is turned on, the following is sent to a colleague\'s PC you have paired with:',
+            'privacy.colleague.li1': 'This PC\'s display name and its device key (public key) used for pairing',
+            'privacy.colleague.li2': 'A window or files that you choose to share',
+            'privacy.colleague.p2': 'Windows and files are sent only after the receiving user approves them on a confirmation screen. Data travels directly between PCs on the same local network and is encrypted. It does not pass through servers run by us or any third party, and we do not collect or store it.',
+            'privacy.colleague.p3': 'The list of paired devices and the sharing history (when, with whom, and what was shared) are stored only on your PC.',
+            'privacy.s4.title': '5. Website Analytics',
             'privacy.s4.p1': 'This product website may use standard anonymous cookies to assess website traffic and improve usability. All collected data is anonymized and cannot identify individual users. You may disable cookies via your browser settings.',
-            'privacy.s5.title': '5. Contact Information',
+            'privacy.s5.title': '6. Contact Information',
             'privacy.s5.p1': 'If you have any questions or feedback regarding this Privacy Policy, please contact us via GitHub repository Issues.',
             'links.store': 'https://apps.microsoft.com/detail/9NHZ91828X9C?hl=en-us&gl=US'
         }
