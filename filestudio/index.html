@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omni File Studio - 巨大CSV・ログ特化 超高速フィルターエディタ | Omni Series</title>
-    <meta name="description" content="Excelでは開けないギガバイト級のCSVやサーバーログを瞬時にオープン。ピーステーブルによるメモリ省力化、リアルタイム正規表現フィルター、ピボット集計をネイティブ速度で処理。Windows 11 / 10 専用。">
+    <title>Omni File Studio - 巨大CSV・ログ対応 高速テキストエディター | Omni Series</title>
+    <meta name="description" content="数 GB の CSV やログも素早く開いて、検索・編集できるテキストエディター。ファイル全体を読み込まないメモリマップ設計で、巨大ファイルも軽快に扱えます。基本機能は無料、Microsoft Store で配信中。Windows 11 / 10 対応。">
     <link rel="canonical" href="https://omni-series.github.io/filestudio/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ja_JP">
     <meta property="og:site_name" content="Omni File Studio">
     <meta property="og:url" content="https://omni-series.github.io/filestudio/">
-    <meta property="og:title" content="Omni File Studio - 巨大CSV・ログ特化 超高速フィルターエディタ">
-    <meta property="og:description" content="Excelでは開けないギガバイト級のCSVやサーバーログを瞬時にオープン。単体でも、OmniPane Explorerのプラグインとしても動作。">
+    <meta property="og:title" content="Omni File Studio - 巨大CSV・ログ対応 高速テキストエディター">
+    <meta property="og:description" content="数 GB の CSV やログも素早く開いて、検索・編集できるテキストエディター。基本機能は無料、Microsoft Store で配信中。">
     <meta name="twitter:card" content="summary_large_image">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -48,15 +48,13 @@
 
             <div class="hidden md:flex space-x-7 text-sm font-medium text-slate-600">
                 <a href="#features" class="hover:text-emerald-600 transition">主要機能</a>
-                <a href="#integration" class="hover:text-emerald-600 transition">OmniPane 統合</a>
-                <a href="#specs" class="hover:text-emerald-600 transition">技術仕様</a>
+                <a href="#free" class="hover:text-emerald-600 transition">無料の機能</a>
+                <a href="#pro" class="hover:text-emerald-600 transition">Pro の機能</a>
+                <a href="#specs" class="hover:text-emerald-600 transition">動作環境</a>
             </div>
 
             <div class="flex items-center gap-3">
-                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                    開発進行中
-                </span>
+                <a href="https://apps.microsoft.com/detail/9N9GW14L711W?hl=ja-jp&gl=JP" target="_blank" rel="noopener" class="bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-emerald-700 shadow-sm transition whitespace-nowrap">無料で入手</a>
             </div>
         </div>
     </nav>
@@ -65,28 +63,29 @@
     <header class="hero-pattern py-20 px-4 relative overflow-hidden">
         <div class="max-w-4xl mx-auto text-center relative z-10">
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-200 text-xs font-semibold mb-6">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span>近日プレビュー公開予定 • Windows 11 / 10 専用</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                <span>✨ Microsoft Store で配信中（v1.0.0）• Windows 11 / 10</span>
             </div>
             <h1 class="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight mb-6">
-                数 GB の CSV もスムーズに開く。<br class="hidden sm:inline">
+                数 GB の CSV もすぐに開く。<br class="hidden sm:inline">
                 <span class="bg-gradient-to-r from-emerald-300 via-teal-200 to-cyan-200 bg-clip-text text-transparent">
-                    超高速フィルター＆ログエディタ
+                    巨大ファイルのためのテキストエディター
                 </span>
             </h1>
             <p class="text-base sm:text-lg text-emerald-100/90 max-w-2xl mx-auto mb-10 leading-relaxed">
-                「Excel で開けない」「エディタが重くなる」巨大ファイルも扱いやすく。<br class="hidden sm:inline">
-                ピーステーブル構造とメモリマップトファイルにより、数百万行のレコードもスムーズにロードし、リアルタイム絞り込みとデータ抽出を可能にします。
+                ファイル全体をメモリに読み込まない設計のため、数 GB のファイルでもすぐに表示が始まり、スクロールや検索も軽快です。<br class="hidden sm:inline">
+                表計算ソフトで開けない CSV や、一般的なエディターでは固まってしまうサーバーログの確認に向いています。
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="https://github.com/omni-series/omni-series.github.io/issues" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-3.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl font-bold shadow-lg shadow-emerald-600/30 transition flex items-center justify-center gap-2">
-                    <span>事前要望・フィードバックを送る</span>
+                <a href="https://apps.microsoft.com/detail/9N9GW14L711W?hl=ja-jp&gl=JP" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-3.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl font-bold shadow-lg shadow-emerald-600/30 transition flex items-center justify-center gap-2">
+                    <span>Microsoft Store で入手（無料）</span>
                     <span>↗</span>
                 </a>
-                <a href="../" class="w-full sm:w-auto px-7 py-3.5 bg-slate-800/80 hover:bg-slate-700/80 border border-emerald-500/30 text-slate-200 rounded-xl font-semibold transition">
-                    Omni Series ポータルへ
+                <a href="https://github.com/omni-series/omni-series.github.io/issues" target="_blank" rel="noopener" class="w-full sm:w-auto px-7 py-3.5 bg-slate-800/80 hover:bg-slate-700/80 border border-emerald-500/30 text-slate-200 rounded-xl font-semibold transition">
+                    要望・フィードバックを送る
                 </a>
             </div>
+            <p class="mt-6 text-xs text-emerald-200/70">基本機能は無料。CSV・比較・バイナリなどの高度な機能は月額サブスクリプション「Pro」で使えます。</p>
         </div>
     </header>
 
@@ -95,81 +94,126 @@
         <div class="text-center max-w-3xl mx-auto mb-16">
             <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-2">Features</h2>
             <p class="text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl">なぜ Omni File Studio なのか</p>
-            <p class="mt-4 text-base text-slate-600">巨大データの閲覧・絞り込み・整形をスムーズに行えるよう、パフォーマンスを徹底して追求しました。</p>
+            <p class="mt-4 text-base text-slate-600">巨大なファイルを「開く・探す・直す」ことに特化したエディターです。</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8 mb-20">
-            <!-- Feature 1 -->
             <div class="bg-white rounded-2xl border border-slate-200 p-8 shadow-sm">
-                <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center text-xl mb-6">
-                    ⚡
-                </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3">スムーズにオープン（メモリマップ設計）</h3>
+                <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center text-xl mb-6">⚡</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">数 GB でもすぐに開く</h3>
                 <p class="text-sm text-slate-600 leading-relaxed">
-                    ファイル全体をメモリに展開しないメモリマップトアーキテクチャにより、1GB を超える CSV や TSV、ログファイルでも素早く閲覧を開始できます。
+                    ファイル全体を読み込まないメモリマップ設計で、数 GB の CSV やログもすぐに表示が始まります。スクロールや検索も軽快です。
                 </p>
             </div>
 
-            <!-- Feature 2 -->
             <div class="bg-white rounded-2xl border border-slate-200 p-8 shadow-sm">
-                <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center text-xl mb-6">
-                    🔍
-                </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3">リアルタイム正規表現フィルター</h3>
+                <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center text-xl mb-6">🔍</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">正規表現の検索と Grep</h3>
                 <p class="text-sm text-slate-600 leading-relaxed">
-                    複数列にまたがる AND / OR 検索、正規表現、数値範囲フィルターをバックグラウンドスレッドで高速処理。結果の行だけを瞬時に抜き出せます。
+                    正規表現による検索・置換に加え、フォルダー内の複数ファイルからまとめて検索 (Grep) できます。文字コードも自動で判定します。
                 </p>
             </div>
 
-            <!-- Feature 3 -->
             <div class="bg-white rounded-2xl border border-slate-200 p-8 shadow-sm">
-                <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center text-xl mb-6">
-                    📊
-                </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3">列別統計＆ピボット集計</h3>
+                <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center text-xl mb-6">🔒</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">通信を一切しない</h3>
                 <p class="text-sm text-slate-600 leading-relaxed">
-                    ユニーク値の頻度集計、NULL率、最小・最大・平均値をワンクリックで算出。データクレンジングや異常ログの検出が直感的に完了します。
+                    インターネットに接続しません。開いたファイルの内容や利用状況が外部へ送信されることはないため、業務データも安心して扱えます。
                 </p>
             </div>
         </div>
 
-        <!-- OmniPane Integration Section -->
-        <section id="integration" class="bg-emerald-50/60 rounded-3xl border border-emerald-100 p-8 sm:p-12 mb-20">
-            <div class="max-w-3xl mx-auto text-center">
-                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-200/70 text-emerald-900 mb-4">
-                    Omni エコシステム連携
-                </span>
-                <h3 class="text-2xl sm:text-3xl font-black text-slate-900 mb-4">
-                    単体アプリ ＋ OmniPane Explorer プラグイン
-                </h3>
-                <p class="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
-                    Omni File Studio は軽量な独立ツールとして単体起動できるだけでなく、OmniPane Explorer の「プレビューペイン」または「専用タブ」としてそのままドッキング可能です。エクスプローラーから巨大ファイルをドラッグ＆ドロップするだけで即座に解析が始まります。
-                </p>
-                <div class="inline-flex items-center gap-2 text-xs font-semibold text-emerald-800 bg-white px-4 py-2 rounded-xl border border-emerald-200 shadow-sm">
-                    <span>✓ OmniPane Explorer ユーザーは追加のランタイムなしで即座に連携可能</span>
+        <!-- Free / Pro -->
+        <div class="grid md:grid-cols-2 gap-8 mb-20">
+            <section id="free" class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-10 shadow-sm">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-700 mb-4">無料</span>
+                <h3 class="text-2xl font-black text-slate-900 mb-2">無料で使える機能</h3>
+                <p class="text-sm text-slate-500 mb-6">テキストエディターとしての基本機能はすべて無料です。</p>
+                <ul class="text-sm text-slate-600 space-y-2.5">
+                    <li>✓ 巨大ファイルの表示と編集（タブ、分割ペイン、同期スクロール）</li>
+                    <li>✓ 正規表現による検索・置換、複数ファイルからの検索 (Grep)</li>
+                    <li>✓ 文字コードの自動判定（UTF-8 / UTF-16 / Shift_JIS など）、指定し直して再読み込み</li>
+                    <li>✓ 文字コード・改行コードの一括変換、BOM の付け外し</li>
+                    <li>✓ マルチカーソル、矩形選択、元に戻す / やり直し</li>
+                    <li>✓ 大文字・小文字、全角・半角の変換、ブックマーク</li>
+                    <li>✓ ダークモード / ライトモード、最前面表示</li>
+                    <li>✓ エクスプローラーの右クリックメニュー「Omni File Studio で開く」（設定でオン / オフ）</li>
+                </ul>
+            </section>
+
+            <section id="pro" class="bg-emerald-50/60 rounded-3xl border border-emerald-100 p-8 sm:p-10">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-200/70 text-emerald-900 mb-4">Pro（月額サブスクリプション）</span>
+                <h3 class="text-2xl font-black text-slate-900 mb-2">Pro で使える機能</h3>
+                <p class="text-sm text-slate-500 mb-6">アプリ内から契約でき、Microsoft アカウントの「サービスとサブスクリプション」からいつでも解約できます。</p>
+                <div class="space-y-5 text-sm text-slate-600">
+                    <div>
+                        <p class="font-bold text-slate-800 mb-1.5">CSV</p>
+                        <ul class="space-y-1.5">
+                            <li>✓ 表計算ソフトのような表形式表示とセルバー</li>
+                            <li>✓ 列の固定、オートフィルター、オートフィル、フラッシュフィル</li>
+                            <li>✓ ピボット集計、重複行の削除、列の分割・結合</li>
+                            <li>✓ セル・行・列のマーカー、スポットライト</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-bold text-slate-800 mb-1.5">ファイルの比較と結合</p>
+                        <ul class="space-y-1.5">
+                            <li>✓ ファイル・タブ同士の比較</li>
+                            <li>✓ ファイルの結合、ログのタイムスタンプ順結合、CSV の統合</li>
+                            <li>✓ 結合結果から元ファイルへのジャンプ、分割出力（サイズ / トークン数）</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-bold text-slate-800 mb-1.5">バイナリ</p>
+                        <ul class="space-y-1.5">
+                            <li>✓ バイナリ (Hex) 表示と上書き編集</li>
+                            <li>✓ データインスペクター（整数・浮動小数点・エンディアン・UNIX 時刻・GUID）</li>
+                            <li>✓ エントロピー・ミニマップ、バイナリ差分</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-bold text-slate-800 mb-1.5">その他</p>
+                        <ul class="space-y-1.5">
+                            <li>✓ 拡張コピー（SQL の IN 句・VALUES 形式、TSV・Markdown・HTML の表形式など）</li>
+                            <li>✓ Base64・URL のエンコード / デコード、二分境界絞り込み (Squeeze Jump)</li>
+                            <li>✓ ピン留めの特殊な方式（半透明・ミニ表示・非アクティブ時に薄くする・Alt ですり抜け）</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <!-- Technical Specifications -->
         <section id="specs" class="max-w-4xl mx-auto">
-            <h3 class="text-xl font-bold text-slate-900 mb-6 text-center">予定されている動作要件・仕様</h3>
+            <h3 class="text-xl font-bold text-slate-900 mb-6 text-center">動作環境・仕様</h3>
             <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm text-sm">
                 <div class="grid grid-cols-1 sm:grid-cols-3 p-4 border-b border-slate-100">
                     <span class="font-bold text-slate-700">対応 OS</span>
-                    <span class="sm:col-span-2 text-slate-600">Windows 11 / Windows 10（64-bit）</span>
+                    <span class="sm:col-span-2 text-slate-600">Windows 11 / Windows 10（64 ビット）</span>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-3 p-4 border-b border-slate-100 bg-slate-50/50">
-                    <span class="font-bold text-slate-700">対応形式</span>
-                    <span class="sm:col-span-2 text-slate-600">CSV, TSV, 各種区切りテキスト, サーバーログ (IIS / Apache / Nginx / JSONL)</span>
+                    <span class="font-bold text-slate-700">配信</span>
+                    <span class="sm:col-span-2 text-slate-600"><a href="https://apps.microsoft.com/detail/9N9GW14L711W?hl=ja-jp&gl=JP" target="_blank" rel="noopener" class="text-emerald-700 hover:underline">Microsoft Store</a>（v1.0.0）</span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 p-4 border-b border-slate-100">
+                    <span class="font-bold text-slate-700">価格</span>
+                    <span class="sm:col-span-2 text-slate-600">無料（高度な機能は月額サブスクリプション「Pro」）</span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 p-4 border-b border-slate-100 bg-slate-50/50">
+                    <span class="font-bold text-slate-700">対応ファイル</span>
+                    <span class="sm:col-span-2 text-slate-600">テキスト、CSV / TSV、各種ログ。バイナリファイルの Hex 表示（Pro）</span>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-3 p-4 border-b border-slate-100">
                     <span class="font-bold text-slate-700">文字コード</span>
-                    <span class="sm:col-span-2 text-slate-600">UTF-8 (BOM有/無), UTF-16, Shift_JIS, CP932 自動判定</span>
+                    <span class="sm:col-span-2 text-slate-600">UTF-8（BOM あり / なし）、UTF-16、Shift_JIS などを自動判定</span>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-3 p-4 bg-slate-50/50">
+                <div class="grid grid-cols-1 sm:grid-cols-3 p-4 border-b border-slate-100 bg-slate-50/50">
+                    <span class="font-bold text-slate-700">表示言語</span>
+                    <span class="sm:col-span-2 text-slate-600">日本語 / 英語</span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 p-4">
                     <span class="font-bold text-slate-700">外部通信</span>
-                    <span class="sm:col-span-2 text-slate-600">ローカル動作（ファイルデータが外部サーバーへ送信されることはありません）</span>
+                    <span class="sm:col-span-2 text-slate-600">なし（ファイルの内容も利用状況も外部へ送信しません）</span>
                 </div>
             </div>
         </section>
@@ -197,4 +241,3 @@
 
 </body>
 </html>
-
