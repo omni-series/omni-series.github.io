@@ -69,9 +69,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <!-- Omni Db Client -->
+  <!-- Omni Data Harbor -->
   <url>
-    <loc>https://omni-series.github.io/dbclient/</loc>
+    <loc>https://omni-series.github.io/dataharbor/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
