@@ -1,121 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
-  <defs>
-    <!-- ベースパネルの微細グラデーション -->
-    <linearGradient id="fluentBlueGrad" x1="15%" y1="0%" x2="85%" y2="100%">
-      <stop offset="0%" stop-color="#0e79ff" />
-      <stop offset="45%" stop-color="#0066f5" />
-      <stop offset="100%" stop-color="#004ed0" />
-    </linearGradient>
-
-    <!-- シリンダ全体のドロップシャドウ（大型化に合わせた重厚なシャドウ） -->
-    <filter id="cylinderShadow" x="-35%" y="-35%" width="170%" height="170%">
-      <feDropShadow dx="0" dy="28" stdDeviation="26" flood-color="#001844" flood-opacity="0.50" />
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.25" />
-    </filter>
-
-    <!-- シリンダ天面・ボディのグラデーション（金属/アクリル調） -->
-    <linearGradient id="cylinderBodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="40%" stop-color="#f0f5ff" />
-      <stop offset="85%" stop-color="#d6e6ff" />
-      <stop offset="100%" stop-color="#b8d4fe" />
-    </linearGradient>
-
-    <!-- シリンダアクセントライン（深みのあるブルー） -->
-    <linearGradient id="grooveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#004fc7" />
-      <stop offset="50%" stop-color="#0066f5" />
-      <stop offset="100%" stop-color="#003b96" />
-    </linearGradient>
-  </defs>
-
-  <!-- ============================================================
-       OmniPaneExplorer 4ペインベース（完全維持）
-       ============================================================ -->
-  <g fill="url(#fluentBlueGrad)">
-    <!-- 1. 左上ペイン: 上部タブ部分 -->
-    <path d="M 20 220
-             L 91.72 131.72
-             A 40 40 0 0 1 120 120
-             L 480 120
-             L 480 66
-             C 425 66 385 45 352 18
-             C 334 5 315 0 285 0
-             L 200 0
-             A 180 180 0 0 0 20 180
-             Z" />
-
-    <!-- 2. 左上ペイン: 下部本体部分 -->
-    <path d="M 20 276.57
-             L 111.51 168.49
-             A 12 12 0 0 1 120 160
-             L 480 160
-             L 480 480
-             L 20 480
-             Z" />
-
-    <!-- 3. 右上ペイン -->
-    <path d="M 520 66
-             L 820 66
-             A 180 180 0 0 1 1000 246
-             L 1000 480
-             L 520 480
-             Z" />
-
-    <!-- 4. 左下ペイン -->
-    <path d="M 20 520
-             L 480 520
-             L 480 1000
-             L 200 1000
-             A 180 180 0 0 1 20 820
-             Z" />
-
-    <!-- 5. 右下ペイン -->
-    <path d="M 520 520
-             L 1000 520
-             L 1000 820
-             A 180 180 0 0 1 820 1000
-             L 520 1000
-             Z" />
-  </g>
-
-  <!-- ============================================================
-       データベース・シリンダ（天面位置 Y=330 固定・超大型版）
-       天面トップ中心 (500, 330) を基準に等比率スケールアップ (scale: 1.42)
-       ============================================================ -->
-  <g id="db-cylinder" transform="translate(500, 330) scale(1.42) translate(-500, -330)" filter="url(#cylinderShadow)">
-    <!-- 【下段ディスク】 -->
-    <path d="M 310 610 
-             L 310 690 
-             A 190 70 0 0 0 690 690 
-             L 690 610 
-             A 190 70 0 0 1 310 610 Z" 
-          fill="url(#cylinderBodyGrad)" />
-    <path d="M 320 690 A 180 65 0 0 0 680 690" 
-          fill="none" stroke="url(#grooveGrad)" stroke-width="12" stroke-linecap="round" />
-
-    <!-- 【中段ディスク】 -->
-    <path d="M 310 470 
-             L 310 550 
-             A 190 70 0 0 0 690 550 
-             L 690 470 
-             A 190 70 0 0 1 310 470 Z" 
-          fill="url(#cylinderBodyGrad)" />
-    <path d="M 320 550 A 180 65 0 0 0 680 550" 
-          fill="none" stroke="url(#grooveGrad)" stroke-width="12" stroke-linecap="round" />
-
-    <!-- 【上段ディスク】 -->
-    <path d="M 310 330 
-             L 310 410 
-             A 190 70 0 0 0 690 410 
-             L 690 330 
-             A 190 70 0 0 1 310 330 Z" 
-          fill="url(#cylinderBodyGrad)" />
-    <path d="M 320 410 A 180 65 0 0 0 680 410" 
-          fill="none" stroke="url(#grooveGrad)" stroke-width="12" stroke-linecap="round" />
-
-    <!-- 最上面の楕円天板（位置: Y=330 を完全維持） -->
-    <ellipse cx="500" cy="330" rx="190" ry="70" fill="#ffffff" />
-    <ellipse cx="500" cy="330" rx="150" ry="50" fill="url(#cylinderBodyGrad)" opacity="0.6" />
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewBox="24.6 20 450.8 460" preserveAspectRatio="none" xml:space="preserve">
+<desc>Created with Fabric.js 5.3.0</desc>
+<defs>
+</defs>
+<g transform="matrix(0.46 0 0 0.46 130.4 70.6)" id="part_40"  >
+<linearGradient id="SVGID_fluentBlueGrad_40" gradientUnits="objectBoundingBox" gradientTransform="matrix(1 0 0 1 0 0)"  x1="0.15" y1="0" x2="0.85" y2="1">
+<stop offset="0%" style="stop-color:rgb(14,121,255);stop-opacity: 1"/>
+<stop offset="45%" style="stop-color:rgb(0,102,245);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(0,78,208);stop-opacity: 1"/>
+</linearGradient>
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: url(#SVGID_fluentBlueGrad_40); fill-rule: nonzero; opacity: 1;"  transform=" translate(-250, -110)" d="M 20 220 L 91.72 131.72 C 99.21970925429832 124.21802500756193 109.39220746084743 120.0022654962198 120 120 L 480 120 L 480 66 C 425 66 385 45 352 18 C 334 5 315 0 285 0 L 200 0 C 100.58874503045718 0 20 80.58874503045718 20 180 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(0.46 0 0 0.46 130.4 167.2)" id="part_41"  >
+<linearGradient id="SVGID_fluentBlueGrad_41" gradientUnits="objectBoundingBox" gradientTransform="matrix(1 0 0 1 0 0)"  x1="0.15" y1="0" x2="0.85" y2="1">
+<stop offset="0%" style="stop-color:rgb(14,121,255);stop-opacity: 1"/>
+<stop offset="45%" style="stop-color:rgb(0,102,245);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(0,78,208);stop-opacity: 1"/>
+</linearGradient>
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: url(#SVGID_fluentBlueGrad_41); fill-rule: nonzero; opacity: 1;"  transform=" translate(-250, -320)" d="M 20 276.57 L 111.51 168.49 C 112.61898768165827 164.34587951594267 115.85587951594266 161.10898768165828 120 160 L 480 160 L 480 480 L 20 480 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(0.46 0 0 0.46 365 145.58)" id="part_42"  >
+<linearGradient id="SVGID_fluentBlueGrad_42" gradientUnits="objectBoundingBox" gradientTransform="matrix(1 0 0 1 0 0)"  x1="0.15" y1="0" x2="0.85" y2="1">
+<stop offset="0%" style="stop-color:rgb(14,121,255);stop-opacity: 1"/>
+<stop offset="45%" style="stop-color:rgb(0,102,245);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(0,78,208);stop-opacity: 1"/>
+</linearGradient>
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: url(#SVGID_fluentBlueGrad_42); fill-rule: nonzero; opacity: 1;"  transform=" translate(-760, -273)" d="M 520 66 L 820 66 C 919.4112549695428 66 1000 146.58874503045712 1000 245.99999999999994 L 1000 480 L 520 480 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(0.46 0 0 0.46 130.4 369.6)" id="part_43"  >
+<linearGradient id="SVGID_fluentBlueGrad_43" gradientUnits="objectBoundingBox" gradientTransform="matrix(1 0 0 1 0 0)"  x1="0.15" y1="0" x2="0.85" y2="1">
+<stop offset="0%" style="stop-color:rgb(14,121,255);stop-opacity: 1"/>
+<stop offset="45%" style="stop-color:rgb(0,102,245);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(0,78,208);stop-opacity: 1"/>
+</linearGradient>
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: url(#SVGID_fluentBlueGrad_43); fill-rule: nonzero; opacity: 1;"  transform=" translate(-250, -760)" d="M 20 520 L 480 520 L 480 1000 L 200 1000 C 100.58874503045718 1000 20 919.4112549695428 20 820 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(0.46 0 0 0.46 365 369.6)" id="part_44"  >
+<linearGradient id="SVGID_fluentBlueGrad_44" gradientUnits="objectBoundingBox" gradientTransform="matrix(1 0 0 1 0 0)"  x1="0.15" y1="0" x2="0.85" y2="1">
+<stop offset="0%" style="stop-color:rgb(14,121,255);stop-opacity: 1"/>
+<stop offset="45%" style="stop-color:rgb(0,102,245);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(0,78,208);stop-opacity: 1"/>
+</linearGradient>
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: url(#SVGID_fluentBlueGrad_44); fill-rule: nonzero; opacity: 1;"  transform=" translate(-760, -760)" d="M 520 520 L 1000 520 L 1000 820 C 1000 919.4112549695428 919.4112549695428 1000 820 1000 L 520 1000 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(0.65 0 0 0.65 245.4 403.69)" id="part_45"  >
+<linearGradient id="SVGID_cylinderBodyGrad_45" gradientUnits="objectBoundingBox" gradientTransform="matrix(1 0 0 1 0 0)"  x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity: 1"/>
+<stop offset="40%" style="stop-color:rgb(240,245,255);stop-opacity: 1"/>
+<stop offset="85%" style="stop-color:rgb(214,230,255);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(184,212,254);stop-opacity: 1"/>
+</linearGradient>
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: url(#SVGID_cylinderBodyGrad_45); fill-rule: nonzero; opacity: 1;"  transform=" translate(-500, -685)" d="M 310 610 L 310 690 C 310 728.6599324881555 395.0658975321493 760 500 760 C 604.9341024678507 760 690 728.6599324881555 690 690 L 690 610 C 690 648.6599324881555 604.9341024678507 680 500 680 C 395.0658975321493 680 310 648.6599324881555 310 610 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(0.65 0 0 0.65 245.4 428.18)" id="part_46"  >
+<linearGradient id="SVGID_54" gradientUnits="objectBoundingBox" gradientTransform="matrix(1 0 0 1 0 0)"  x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" style="stop-color:#c70000;stop-opacity: 1"/>
+<stop offset="50%" style="stop-color:#f50004;stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:#940000;stop-opacity: 1"/>
+</linearGradient>
+<path style="stroke: url(#SVGID_54); stroke-width: 12; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"  transform=" translate(-500, -722.5)" d="M 320 690 C 320 725.8985087390016 400.5887450304572 755 500 755 C 599.4112549695428 755 680 725.8985087390016 680 690" stroke-linecap="round" />
+</g>
+<g transform="matrix(0.65 0 0 0.65 245.4 312.24)" id="part_47"  >
+<linearGradient id="SVGID_cylinderBodyGrad_47" gradientUnits="objectBoundingBox" gradientTransform="matrix(1 0 0 1 0 0)"  x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity: 1"/>
+<stop offset="40%" style="stop-color:rgb(240,245,255);stop-opacity: 1"/>
+<stop offset="85%" style="stop-color:rgb(214,230,255);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(184,212,254);stop-opacity: 1"/>
+</linearGradient>
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: url(#SVGID_cylinderBodyGrad_47); fill-rule: nonzero; opacity: 1;"  transform=" translate(-500, -545)" d="M 310 470 L 310 550 C 310 588.6599324881555 395.0658975321493 620 500 620 C 604.9341024678507 620 690 588.6599324881555 690 550 L 690 470 C 690 508.65993248815556 604.9341024678507 540 500 540 C 395.0658975321493 540 310 508.65993248815556 310 470 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(0.65 0 0 0.65 245.4 336.73)" id="part_48"  >
+<linearGradient id="SVGID_53" gradientUnits="objectBoundingBox" gradientTransform="matrix(1 0 0 1 0 0)"  x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" style="stop-color:#c70000;stop-opacity: 1"/>
+<stop offset="50%" style="stop-color:#f50004;stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:#940000;stop-opacity: 1"/>
+</linearGradient>
+<path style="stroke: url(#SVGID_53); stroke-width: 12; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"  transform=" translate(-500, -582.5)" d="M 320 550 C 320 585.8985087390016 400.5887450304572 615 500 615 C 599.4112549695428 615 680 585.8985087390016 680 550" stroke-linecap="round" />
+</g>
+<g transform="matrix(0.65 0 0 0.65 245.4 220.79)" id="part_49"  >
+<linearGradient id="SVGID_cylinderBodyGrad_49" gradientUnits="objectBoundingBox" gradientTransform="matrix(1 0 0 1 0 0)"  x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity: 1"/>
+<stop offset="40%" style="stop-color:rgb(240,245,255);stop-opacity: 1"/>
+<stop offset="85%" style="stop-color:rgb(214,230,255);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(184,212,254);stop-opacity: 1"/>
+</linearGradient>
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: url(#SVGID_cylinderBodyGrad_49); fill-rule: nonzero; opacity: 1;"  transform=" translate(-500, -405)" d="M 310 330 L 310 410 C 310 448.65993248815556 395.0658975321493 480 500 480 C 604.9341024678507 480 690 448.65993248815556 690 410 L 690 330 C 690 368.65993248815556 604.9341024678507 400 500 400 C 395.0658975321493 400 310 368.65993248815556 310 330 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(0.65 0 0 0.65 245.4 245.29)" id="part_50"  >
+<linearGradient id="SVGID_52" gradientUnits="objectBoundingBox" gradientTransform="matrix(1 0 0 1 0 0)"  x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" style="stop-color:#c70000;stop-opacity: 1"/>
+<stop offset="50%" style="stop-color:#f50004;stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:#940000;stop-opacity: 1"/>
+</linearGradient>
+<path style="stroke: url(#SVGID_52); stroke-width: 12; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"  transform=" translate(-500, -442.5)" d="M 320 410 C 320 445.89850873900156 400.5887450304572 475 500 475 C 599.4112549695428 475 680 445.89850873900156 680 410" stroke-linecap="round" />
+</g>
+<g transform="matrix(0.65 0 0 0.65 245.4 171.8)" id="part_51"  >
+<ellipse style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"  cx="0" cy="0" rx="190" ry="70" />
+</g>
+<g transform="matrix(0.65 0 0 0.65 245.4 171.8)" id="part_52"  >
+<linearGradient id="SVGID_cylinderBodyGrad_51" gradientUnits="objectBoundingBox" gradientTransform="matrix(1 0 0 1 0 0)"  x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity: 1"/>
+<stop offset="40%" style="stop-color:rgb(240,245,255);stop-opacity: 1"/>
+<stop offset="85%" style="stop-color:rgb(214,230,255);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(184,212,254);stop-opacity: 1"/>
+</linearGradient>
+<ellipse style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: url(#SVGID_cylinderBodyGrad_51); fill-rule: nonzero; opacity: 0.6;"  cx="0" cy="0" rx="150" ry="50" />
+</g>
 </svg>
