@@ -81,8 +81,8 @@
             <svg class="w-5 h-5 text-blue-600 shrink-0 mt-0.5 sm:mt-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                 <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
             </svg>
-            <div data-i18n-html="editions.notice">
-                <strong>Microsoft Store 正式配信:</strong> Community は無料・無期限にご利用いただけます。Pro は Store 内サブスクリプション（年額 ¥5,800 / 月額 ¥580、7日間無料体験付き）でお求めいただけます。
+            <div>
+                <strong>ライセンス販売:</strong> Community は無料・無期限にご利用いただけます。Pro は Web（Stripe 決済）にて月払い・年払い（7日間無料体験付き）でお求めいただけます。
             </div>
         </div>
 
@@ -205,9 +205,10 @@
                         </li>
                     </ul>
                 </div>
-                <a href="https://apps.microsoft.com/search?query=Omni+Warp+Helm" data-i18n-href="links.store" target="_blank" rel="noopener" class="w-full py-3.5 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold text-center text-sm shadow-md shadow-blue-600/30 transition" data-i18n="editions.plan.pro.btn">
-                    7日間無料で体験する (Pro)
-                </a>
+                <div class="flex flex-col gap-2">
+                    <a href="https://buy.stripe.com/7sY5kDeiE5BV0nce6WgA80d" target="_blank" rel="noopener" class="w-full py-3 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold text-center text-sm shadow-md shadow-blue-600/30 transition">月払いで始める (7日間無料体験)</a>
+                    <a href="https://buy.stripe.com/4gM5kD7UgaWfee26EugA80i" target="_blank" rel="noopener" class="w-full py-3 px-4 border border-blue-600 hover:bg-blue-50 text-blue-700 rounded-xl font-bold text-center text-sm transition">年払いで始める (7日間無料体験・お得)</a>
+                </div>
             </article>
         </div>
 
