@@ -104,6 +104,12 @@ const PRODUCT_CONFIGS = {
     },
 
     // 6. Stripe プラン・オファー ID の直接マッピング (trial/live)
+    "price_1uegbafnot08dcftxm3ykhgy": {
+        productId: "filestudio",
+        prefix: "OFS",
+        defaultPlan: "Omni File Studio Pro",
+        maxActivations: 2
+    },
     "to_1uedw8fnot08dcftbqld39hc": {
         productId: "omnipane",
         prefix: "OPE",
@@ -142,6 +148,18 @@ const PRODUCT_CONFIGS = {
     },
 
     // 7. Stripe Payment Link スラッグの直接マッピング
+    "9b65kd4i4e8rc5ue6wga80k": {
+        productId: "filestudio",
+        prefix: "OFS",
+        defaultPlan: "Omni File Studio Pro",
+        maxActivations: 2
+    },
+    "bje4gzdea8o78ti9qgga800": {
+        productId: "filestudio",
+        prefix: "OFS",
+        defaultPlan: "Omni File Studio Pro",
+        maxActivations: 2
+    },
     "7sy5kdeie5bv0nce6wga80d": {
         productId: "warphelm",
         prefix: "OWH",
