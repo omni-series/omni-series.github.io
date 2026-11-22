@@ -7,7 +7,7 @@
 ## セットアップ（初回）
 
 1. https://clarity.microsoft.com/ にサインイン（Microsoft アカウント）
-2. **新しいプロジェクト** → サイト URL: `https://omni-series.github.io/omnipane/`
+2. **新しいプロジェクト** → サイト URL: `https://omni-series.pages.dev/omnipane/`
 3. 発行された **Project ID**（英数字）をコピー
 4. 各 HTML の `<head>` に Microsoft 公式インラインタグを埋め込み済み（Project ID: `xk08syw62q`）
    - **外部 `clarity.js` だけでは Clarity のセットアップ検出に失敗することがあります**
@@ -26,7 +26,7 @@
 
 **設定 → セットアップ** のサイト URL は次と完全一致させてください:
 
-`https://omni-series.github.io/omnipane/`
+`https://omni-series.pages.dev/omnipane/`
 
 ルートドメインのみ（`/omnipane/` なし）だと検出・計測が遅れることがあります。
 

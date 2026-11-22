@@ -1,7 +1,7 @@
 ﻿title: Omni Series
 description: Professional Workspace and Native Utilities for Windows
 baseurl: ""
-url: "https://omni-series.github.io"
+url: "https://omni-series.pages.dev"
 include:
   - ".well-known"
 

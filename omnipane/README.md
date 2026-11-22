@@ -67,9 +67,9 @@ OmniPane Explorerは、無料の **Community版** から基本機能をお試し
 | リンク | 説明 |
 | :--- | :--- |
 | [Microsoft Store](https://apps.microsoft.com/detail/9pfdz0fn43vx) | 無料版のダウンロード・アップグレード |
-| [エディション比較（Web）](https://omni-series.github.io/omnipane/editions.html) | プラン別機能の詳細 |
-| [サポート](https://omni-series.github.io/omnipane/support.html) | お問い合わせ・FAQ |
-| [プライバシーポリシー](https://omni-series.github.io/omnipane/privacy.html) | 個人情報の取扱い |
+| [エディション比較（Web）](https://omni-series.pages.dev/omnipane/editions.html) | プラン別機能の詳細 |
+| [サポート](https://omni-series.pages.dev/omnipane/support.html) | お問い合わせ・FAQ |
+| [プライバシーポリシー](https://omni-series.pages.dev/omnipane/privacy.html) | 個人情報の取扱い |
 
 ## サイト分析
 
@@ -84,7 +84,7 @@ OmniPane Explorerは、無料の **Community版** から基本機能をお試し
 - 動画インデックス用の再生ページ: `demo.html`（トップの埋め込みは補足コンテンツ）
 - 公開後: [Google Search Console](https://search.google.com/search-console) でプロパティ追加し、sitemap URL を送信
 
-Sitemap: `https://omni-series.github.io/omnipane/sitemap.xml`
+Sitemap: `https://omni-series.pages.dev/omnipane/sitemap.xml`
 
 
 ---

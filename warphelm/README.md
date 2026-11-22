@@ -2,7 +2,7 @@
 
 Official website and documentation for **Omni Warp Helm** — Windows Native Ultra Low-Latency KM Sharing, Screen Mirroring, and Remote Direct File Edit utility.
 
-- **URL**: [https://omni-series.github.io/warphelm/](https://omni-series.github.io/warphelm/)
+- **URL**: [https://omni-series.pages.dev/warphelm/](https://omni-series.pages.dev/warphelm/)
 
 ## Structure
 

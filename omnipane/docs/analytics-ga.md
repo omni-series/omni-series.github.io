@@ -20,7 +20,7 @@
 ## 確認手順
 
 1. 変更を commit & push → GitHub Pages 反映を待つ
-2. 公開サイトを開く: `https://omni-series.github.io/omnipane/`
+2. 公開サイトを開く: `https://omni-series.pages.dev/omnipane/`
 3. Google Analytics のリアルタイムレポート、またはブラウザ開発者ツールの Network で `google-analytics.com` / `googletagmanager.com` への送信を確認
 
 ## プライバシー
