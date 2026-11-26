@@ -30,9 +30,9 @@
                 <a href="index.html" class="text-blue-600 hover:underline text-sm">← トップページへ戻る</a>
             </div>
             <div class="flex items-center space-x-2">
-                <a href="editions.html" class="text-xs text-slate-600 hover:text-blue-600 transition">エディション一覧</a>
+                <a href="editions.html" class="text-xs text-slate-600 hover:text-blue-600 transition" id="nav-editions">エディション一覧</a>
                 <span class="text-slate-300">|</span>
-                <a href="../law.html" class="text-xs text-slate-600 hover:text-blue-600 transition">特定商取引法</a>
+                <a href="../law.html" class="text-xs text-slate-600 hover:text-blue-600 transition" id="nav-law">特定商取引法</a>
             </div>
         </div>
     </nav>
@@ -187,11 +187,11 @@
                 <span>© 2026</span>
             </div>
             <div class="flex flex-wrap items-center justify-center gap-5 text-slate-400">
-                <a href="index.html" class="hover:text-white transition">トップページ</a>
-                <a href="editions.html" class="hover:text-white transition">エディション</a>
-                <a href="privacy.html" class="hover:text-white transition">プライバシーポリシー</a>
-                <a href="../law.html" class="hover:text-white transition">特定商取引法</a>
-                <a href="support.html" class="hover:text-white transition">サポート</a>
+                <a href="index.html" class="hover:text-white transition" id="footer-home">トップページ</a>
+                <a href="editions.html" class="hover:text-white transition" id="footer-editions">エディション</a>
+                <a href="privacy.html" class="hover:text-white transition" id="footer-privacy">プライバシーポリシー</a>
+                <a href="../law.html" class="hover:text-white transition" id="footer-law">特定商取引法</a>
+                <a href="support.html" class="hover:text-white transition" id="footer-support">サポート</a>
             </div>
         </div>
     </footer>
@@ -201,20 +201,62 @@
         const btnJa = document.getElementById('tab-btn-ja');
         const contentEn = document.getElementById('content-en');
         const contentJa = document.getElementById('content-ja');
+        const navEditions = document.getElementById('nav-editions');
+        const navLaw = document.getElementById('nav-law');
+        const footerHome = document.getElementById('footer-home');
+        const footerEditions = document.getElementById('footer-editions');
+        const footerPrivacy = document.getElementById('footer-privacy');
+        const footerLaw = document.getElementById('footer-law');
+        const footerSupport = document.getElementById('footer-support');
+
+        function setLanguage(lang) {
+            if (lang === 'en') {
+                btnEn.className = 'px-4 py-2 rounded-lg font-bold text-sm bg-blue-600 text-white shadow-sm transition';
+                btnJa.className = 'px-4 py-2 rounded-lg font-semibold text-sm bg-slate-100 text-slate-700 hover:bg-slate-200 transition';
+                contentEn.classList.remove('hidden');
+                contentJa.classList.add('hidden');
+                if (navEditions) navEditions.textContent = 'Editions';
+                if (navLaw) navLaw.textContent = 'Legal Notice (Law)';
+                if (footerHome) footerHome.textContent = 'Home';
+                if (footerEditions) footerEditions.textContent = 'Editions';
+                if (footerPrivacy) footerPrivacy.textContent = 'Privacy Policy';
+                if (footerLaw) footerLaw.textContent = 'Specified Commercial Transactions Act';
+                if (footerSupport) footerSupport.textContent = 'Support';
+                document.documentElement.lang = 'en';
+            } else {
+                btnJa.className = 'px-4 py-2 rounded-lg font-bold text-sm bg-blue-600 text-white shadow-sm transition';
+                btnEn.className = 'px-4 py-2 rounded-lg font-semibold text-sm bg-slate-100 text-slate-700 hover:bg-slate-200 transition';
+                contentJa.classList.remove('hidden');
+                contentEn.classList.add('hidden');
+                if (navEditions) navEditions.textContent = 'エディション一覧';
+                if (navLaw) navLaw.textContent = '特定商取引法';
+                if (footerHome) footerHome.textContent = 'トップページ';
+                if (footerEditions) footerEditions.textContent = 'エディション';
+                if (footerPrivacy) footerPrivacy.textContent = 'プライバシーポリシー';
+                if (footerLaw) footerLaw.textContent = '特定商取引法';
+                if (footerSupport) footerSupport.textContent = 'サポート';
+                document.documentElement.lang = 'ja';
+            }
+        }
 
         btnJa.addEventListener('click', () => {
-            btnJa.className = 'px-4 py-2 rounded-lg font-bold text-sm bg-blue-600 text-white shadow-sm transition';
-            btnEn.className = 'px-4 py-2 rounded-lg font-semibold text-sm bg-slate-100 text-slate-700 hover:bg-slate-200 transition';
-            contentJa.classList.remove('hidden');
-            contentEn.classList.add('hidden');
+            setLanguage('ja');
+            localStorage.setItem('ope-site-lang', 'ja');
         });
 
         btnEn.addEventListener('click', () => {
-            btnEn.className = 'px-4 py-2 rounded-lg font-bold text-sm bg-blue-600 text-white shadow-sm transition';
-            btnJa.className = 'px-4 py-2 rounded-lg font-semibold text-sm bg-slate-100 text-slate-700 hover:bg-slate-200 transition';
-            contentEn.classList.remove('hidden');
-            contentJa.classList.add('hidden');
+            setLanguage('en');
+            localStorage.setItem('ope-site-lang', 'en');
         });
+
+        // Initialize based on URL or storage
+        const params = new URLSearchParams(window.location.search);
+        let initialLang = params.get('lang') || localStorage.getItem('ope-site-lang') || localStorage.getItem('omni-site-lang');
+        if (!initialLang) {
+            const nav = (navigator.language || '').toLowerCase();
+            initialLang = nav.startsWith('ja') ? 'ja' : 'en';
+        }
+        setLanguage(initialLang === 'en' ? 'en' : 'ja');
     </script>
 </body>
 </html>

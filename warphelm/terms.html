@@ -187,24 +187,55 @@
         </div>
     </footer>
 
+    <script src="assets/i18n.js"></script>
     <script>
         const btnEn = document.getElementById('tab-btn-en');
         const btnJa = document.getElementById('tab-btn-ja');
         const contentEn = document.getElementById('content-en');
         const contentJa = document.getElementById('content-ja');
 
-        btnEn.addEventListener('click', () => {
-            btnEn.className = 'px-4 py-2 rounded-lg font-bold text-sm bg-blue-600 text-white shadow-sm transition';
-            btnJa.className = 'px-4 py-2 rounded-lg font-semibold text-sm bg-slate-100 text-slate-700 hover:bg-slate-200 transition';
-            contentEn.classList.remove('hidden');
-            contentJa.classList.add('hidden');
-        });
+        function switchTermsTab(lang) {
+            if (lang === 'ja') {
+                if (btnJa) {
+                    btnJa.className = 'px-4 py-2 rounded-lg font-bold text-sm bg-blue-600 text-white shadow-sm transition';
+                    btnEn.className = 'px-4 py-2 rounded-lg font-semibold text-sm bg-slate-100 text-slate-700 hover:bg-slate-200 transition';
+                }
+                if (contentJa) contentJa.classList.remove('hidden');
+                if (contentEn) contentEn.classList.add('hidden');
+            } else {
+                if (btnEn) {
+                    btnEn.className = 'px-4 py-2 rounded-lg font-bold text-sm bg-blue-600 text-white shadow-sm transition';
+                    btnJa.className = 'px-4 py-2 rounded-lg font-semibold text-sm bg-slate-100 text-slate-700 hover:bg-slate-200 transition';
+                }
+                if (contentEn) contentEn.classList.remove('hidden');
+                if (contentJa) contentJa.classList.add('hidden');
+            }
+        }
 
-        btnJa.addEventListener('click', () => {
-            btnJa.className = 'px-4 py-2 rounded-lg font-bold text-sm bg-blue-600 text-white shadow-sm transition';
-            btnEn.className = 'px-4 py-2 rounded-lg font-semibold text-sm bg-slate-100 text-slate-700 hover:bg-slate-200 transition';
-            contentJa.classList.remove('hidden');
-            contentEn.classList.add('hidden');
+        if (btnJa) {
+            btnJa.addEventListener('click', () => {
+                switchTermsTab('ja');
+                if (window.SiteI18n) window.SiteI18n.applyLang('ja');
+            });
+        }
+        if (btnEn) {
+            btnEn.addEventListener('click', () => {
+                switchTermsTab('en');
+                if (window.SiteI18n) window.SiteI18n.applyLang('en');
+            });
+        }
+
+        SiteI18n.init({ page: 'terms' });
+
+        // Sync initial tab with resolved lang
+        const initialLang = localStorage.getItem('owh-site-lang') || 'ja';
+        switchTermsTab(initialLang);
+
+        // Also listen to nav lang-btn clicks
+        document.querySelectorAll('[data-set-lang]').forEach((btn) => {
+            btn.addEventListener('click', () => {
+                switchTermsTab(btn.getAttribute('data-set-lang'));
+            });
         });
     </script>
 </body>
