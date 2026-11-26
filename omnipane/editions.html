@@ -118,6 +118,7 @@
                     <a href="https://buy.stripe.com/28EdR9b6sfcv2vk9QGgA80j" target="_blank" rel="noopener" class="block text-center py-2.5 rounded-xl bg-blue-600 text-white font-bold hover:bg-blue-700 transition text-sm shadow-sm">月払いで購入 (¥980/月)</a>
                     <a href="https://buy.stripe.com/dRm9ATa2o2pJb1Q3sigA80g" target="_blank" rel="noopener" class="block text-center py-2.5 rounded-xl border border-blue-600 text-blue-700 font-bold hover:bg-blue-50 transition text-sm">年払いで購入 (¥9,800/年・お得)</a>
                 </div>
+                <p class="mt-2 text-center text-[11px] text-slate-400">※ デジタルライセンスの特性上、決済完了後の返金・返品は承っておりません。</p>
             </article>
 
             <article class="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 flex flex-col">
@@ -136,7 +137,17 @@
                     <a href="https://buy.stripe.com/eVqaEX0rO2pJ6LAbYOgA80h" target="_blank" rel="noopener" class="block text-center py-2.5 rounded-xl bg-purple-600 text-white font-bold hover:bg-purple-700 transition text-sm shadow-sm">月払いで購入 (¥1,850/月)</a>
                     <a href="https://buy.stripe.com/bJe00j4I4fcv9XM8MCgA80c" target="_blank" rel="noopener" class="block text-center py-2.5 rounded-xl border border-purple-600 text-purple-700 font-bold hover:bg-purple-50 transition text-sm">年払いで購入 (¥18,500/年・お得)</a>
                 </div>
+                <p class="mt-2 text-center text-[11px] text-slate-400">※ デジタルライセンスの特性上、決済完了後の返金・返品は承っておりません。</p>
             </article>
+        </div>
+
+        <!-- Payment & Refund Notice Banner -->
+        <div class="mb-14 rounded-xl border border-slate-200 bg-white p-4 text-xs text-slate-600 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-sm">
+            <div class="flex items-center gap-2">
+                <span class="text-blue-600 font-bold shrink-0">【決済・ライセンスについて】</span>
+                <span>Stripeによる安全な暗号化決済。デジタルコンテンツの特性上、購入手続き完了後の返金・返品は承っておりません。まずは無料版で動作をご確認ください。</span>
+            </div>
+            <a href="../law.html" class="text-blue-600 hover:underline shrink-0 font-medium">特定商取引法に基づく表記 →</a>
         </div>
 
         <section class="mb-16">
@@ -280,7 +291,7 @@
                     <span data-i18n="editions.faq.q1">Community から有料版へはどうやって移行しますか？</span>
                     <span class="text-slate-400 group-open:rotate-180 transition shrink-0">▼</span>
                 </summary>
-                <p class="mt-3 text-sm text-slate-600" data-i18n-html="editions.faq.a1">アプリ内の「アップグレード」画面、または Microsoft Store から Standard / Professional アドオン（月払い・年払い）を購入すると、ライセンスが有効化されます。既存の .ope やローカルデータは端末に残ります。有料版は 1 ライセンスにつき 1 台の PC で利用できます。</p>
+                <p class="mt-3 text-sm text-slate-600" data-i18n-html="editions.faq.a1">本サイトの各購入ボタン（Stripe 決済）またはアプリ内の「アップグレード」画面から Standard / Professional ライセンス（月払い・年払い）をご購入いただくと、ライセンスキーが発行され機能が有効化されます。既存の .ope やローカルデータは端末に残ります。有料版は 1 ライセンスにつき 1 台の PC で利用できます。</p>
             </details>
             <details class="bg-white rounded-xl border border-slate-200 p-5 group">
                 <summary class="font-semibold cursor-pointer list-none flex justify-between items-center gap-4">
@@ -291,10 +302,10 @@
             </details>
             <details class="bg-white rounded-xl border border-slate-200 p-5 group">
                 <summary class="font-semibold cursor-pointer list-none flex justify-between items-center gap-4">
-                    <span data-i18n="editions.faq.q3">月払いと年払いは選べますか？</span>
+                    <span data-i18n="editions.faq.q3">月払いと年払いは選べますか？解約はどう行いますか？</span>
                     <span class="text-slate-400 group-open:rotate-180 transition shrink-0">▼</span>
                 </summary>
-                <p class="mt-3 text-sm text-slate-600" data-i18n="editions.faq.a3">アプリ内のアップグレード画面でお支払い周期（月払い / 年払い）を選んでから、Microsoft Store の決済でアドオンを購入できます。サブスクリプションの管理・解約は Microsoft Store のアカウント設定から行えます。</p>
+                <p class="mt-3 text-sm text-slate-600" data-i18n="editions.faq.a3">月払いプランとお得な年払いプラン（実質2か月分無料）からお選びいただけます。Stripe の安全な決済システム経由でお支払いいただき、サブスクリプションの自動更新の停止・解約は、購入完了メールに記載のカスタマーポータルリンクからいつでもワンクリックで行えます。</p>
             </details>
             <details class="bg-white rounded-xl border border-slate-200 p-5 group">
                 <summary class="font-semibold cursor-pointer list-none flex justify-between items-center gap-4">
@@ -310,6 +321,13 @@
                 </summary>
                 <p class="mt-3 text-sm text-slate-600" data-i18n="editions.faq.a5">.ope やタグ・メモなどのデータは端末に残ります。自動削除はしません。Community や Standard の上限を超える分は、再アップグレードするまで閲覧・編集できないことがあります。</p>
             </details>
+            <details class="bg-white rounded-xl border border-slate-200 p-5 group">
+                <summary class="font-semibold cursor-pointer list-none flex justify-between items-center gap-4">
+                    <span data-i18n="editions.faq.q6">購入後の返品や返金はできますか？</span>
+                    <span class="text-slate-400 group-open:rotate-180 transition shrink-0">▼</span>
+                </summary>
+                <p class="mt-3 text-sm text-slate-600" data-i18n="editions.faq.a6">デジタルライセンスキーという商品の性質上、決済完了後のキャンセル・返品・返金はお受けできません。定期課金（サブスクリプション）を途中解約された場合でも、日割り返金は行われません（次回更新日までそのまま有料機能をご利用いただけます）。ご購入前に必ず無料版（Community Edition）にて動作をご確認ください。</p>
+            </details>
         </section>
     </main>
 
@@ -321,7 +339,9 @@
             </div>
             <div class="flex flex-wrap justify-center md:justify-end gap-6 text-sm">
                 <a href="index.html" class="hover:text-white transition underline decoration-slate-700" data-i18n="footer.home">トップページ</a>
+                <a href="terms.html" class="hover:text-white transition underline decoration-slate-700" data-i18n="footer.terms">利用規約</a>
                 <a href="privacy.html" class="hover:text-white transition underline decoration-slate-700" data-i18n="footer.privacy">プライバシーポリシー</a>
+                <a href="../law.html" class="hover:text-white transition underline decoration-slate-700" data-i18n="footer.law">特定商取引法に基づく表記</a>
                 <a href="support.html" class="hover:text-white transition underline decoration-slate-700" data-i18n="footer.support">サポート</a>
             </div>
         </div>

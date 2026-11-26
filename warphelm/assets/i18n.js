@@ -28,7 +28,9 @@
             'nav.home': 'ホーム',
             'footer.editions': 'エディション',
             'footer.support': 'サポート',
+            'footer.terms': '利用規約',
             'footer.privacy': 'プライバシーポリシー',
+            'footer.law': '特定商取引法に基づく表記',
             'footer.github': 'GitHub',
 
             // Index: Hero
@@ -282,6 +284,8 @@
             'editions.faq.a4': '1ライセンスにつき、ご自身が所有するPC最大2台まで同時にアクティベーションしてPro機能をご利用いただけます。3台目以降で利用する場合は古い端末のアクティベーションを解除するか、追加ライセンスをご購入ください。',
             'editions.faq.q5': 'Q. サブスクリプションの解約はいつでも可能ですか？',
             'editions.faq.a5': 'はい。Stripe のカスタマーポータル（購入完了メール内のリンク等）からいつでもワンクリックで自動更新を解約できます。解約後も有効期限が満了するまで Pro 機能をそのままご利用いただけます。',
+            'editions.faq.q6': 'Q. 購入後の返品や返金はできますか？',
+            'editions.faq.a6': 'デジタルライセンスキーという商品の性質上、決済完了後のキャンセル・返品・返金はお受けできません。定期課金（サブスクリプション）を途中解約された場合でも、日割り返金は行われません（次回更新日までそのままPro機能をご利用いただけます）。ご購入前に必ず無料版（Community Edition）または7日間の無料体験期間にて動作をご確認ください。',
 
             // Support
             'support.hero.kicker': 'Help & Support',
@@ -370,7 +374,9 @@
             'nav.home': 'Home',
             'footer.editions': 'Editions',
             'footer.support': 'Support',
+            'footer.terms': 'Terms of Service',
             'footer.privacy': 'Privacy Policy',
+            'footer.law': 'Specified Commercial Transactions Act',
             'footer.github': 'GitHub',
 
             // Index: Hero
@@ -618,6 +624,14 @@
             'editions.faq.a1': 'Yes. The Community edition has no time limit and lets you enjoy single-PC productivity tools (Foreground App Swap, Cursor Spotlight, Button Magnet) as well as 2-PC mouse/keyboard and text copy sharing completely free forever.',
             'editions.faq.q2': 'Q. What pricing plans and payment options are available?',
             'editions.faq.a2': 'We offer a high-value Annual Plan ($79.00 / yr, equivalent to ~$6.58/mo, offering 2 months free) and a flexible Monthly Plan ($7.99 / mo). Both include a 7-day free trial and are securely processed via Stripe.',
+            'editions.faq.q3': 'Q. Why a subscription instead of a one-time purchase?',
+            'editions.faq.a3': 'Omni Warp Helm deeply interacts with low-level Windows display and input subsystems. We utilize a subscription model to sustain continuous engineering, priority compatibility updates for major Windows 11/10 releases, and swift hotfixes.',
+            'editions.faq.q4': 'Q. Do I need separate licenses for multiple PCs?',
+            'editions.faq.a4': 'A single license allows activating Pro features on up to 2 personal computers simultaneously. To use more than 2 machines simultaneously, simply deactivate an older device or purchase additional licenses.',
+            'editions.faq.q5': 'Q. Can I cancel my subscription at any time?',
+            'editions.faq.a5': 'Yes. You can cancel auto-renewal anytime with one click through the Stripe Customer Portal link provided in your purchase confirmation email. You retain Pro access until the end of your prepaid period.',
+            'editions.faq.q6': 'Q. Can I get a refund after purchase?',
+            'editions.faq.a6': 'Due to the nature of digital license keys and downloadable software, all purchases and subscription payments are non-refundable once completed. If you cancel your subscription mid-cycle, no prorated refund will be issued, but you will retain full access until the end of your billing cycle. Please test compatibility with the free Community Edition or 7-day free trial before purchasing.',
             'editions.faq.q3': 'Q. Why a subscription instead of a one-time purchase?',
             'editions.faq.a3': 'OmniWarpHelm directly interfaces with Windows to ensure silky smooth control. To guarantee continuous compatibility with Windows 11/10 major updates and security revisions, and to actively provide new features, we maintain an ongoing subscription model.',
             'editions.faq.q4': 'Q. Do I need separate licenses for multiple PCs?',
