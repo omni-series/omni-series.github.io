@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">プライバシーポリシー - Omni Series</title>
+    <meta name="description" id="page-desc" content="Omni Series（OmniPane Explorer, Omni Warp Helm, Omni File Studio 等）の共通プライバシーポリシーおよびローカル優先データ保護方針について。">
+    <link rel="canonical" href="https://omni-series.pages.dev/privacy.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="Omni Series by WinSolutions">
+    <meta property="og:url" content="https://omni-series.pages.dev/privacy.html">
+    <meta property="og:title" content="プライバシーポリシー - Omni Series">
+    <meta property="og:description" content="Omni Series の共通プライバシーポリシーおよびローカル優先データ保護方針について。">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="assets/icons/omniseries_spectrum.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 h-14 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="inline-flex items-center gap-2 text-slate-900 font-bold text-sm hover:text-blue-600 transition">
+                    <img src="assets/icons/omniseries_spectrum.svg" alt="Omni Series" class="w-5 h-5">
+                    <span>Omni Series</span>
+                </a>
+                <span class="text-slate-300">/</span>
+                <span class="text-xs font-semibold text-slate-500" id="nav-current-title">プライバシーポリシー</span>
+            </div>
+            <div class="flex items-center space-x-4 text-xs">
+                <a href="terms.html" class="text-slate-600 hover:text-blue-600 transition" id="nav-terms-link">利用規約</a>
+                <a href="law.html" class="text-slate-600 hover:text-blue-600 transition" id="nav-law-link">特定商取引法</a>
+                <a href="index.html" class="text-blue-600 hover:underline font-medium" id="nav-back-link">← ポータルへ戻る</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-12 flex-grow w-full">
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-10">
+
+            <div class="border-b border-slate-200 pb-6 mb-8 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+                <div>
+                    <div class="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold mb-3" id="badge-title">
+                        Omni Series Privacy Policy
+                    </div>
+                    <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-2" id="doc-heading">
+                        プライバシーポリシー
+                    </h1>
+                    <p class="text-xs text-slate-400 font-mono" id="doc-date">
+                        Privacy Policy • 最終改定日: 2026年11月26日
+                    </p>
+                </div>
+                <!-- Language Switch Tab -->
+                <div class="flex space-x-2 shrink-0">
+                    <button id="tab-btn-ja" class="px-4 py-2 rounded-lg font-bold text-sm bg-blue-600 text-white shadow-sm transition">
+                        日本語（正本）
+                    </button>
+                    <button id="tab-btn-en" class="px-4 py-2 rounded-lg font-semibold text-sm bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                        English (Reference)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Japanese Content -->
+            <div id="content-ja" class="prose prose-slate max-w-none space-y-6 text-sm sm:text-base leading-relaxed text-slate-700">
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 text-xs font-mono text-slate-600">
+                    <strong>プライバシーポリシー — OMNI SERIES</strong><br>
+                    WinSolutions / Omni Series Project（以下「当プロジェクト」）は、提供するソフトウェア群「Omni Series」（OmniPane Explorer、Omni Warp Helm、Omni File Studio、その他関連ツール）および公式ウェブサイト（以下「本サイト」）において、ユーザーのプライバシーとデータセキュリティを最優先に尊重し、以下の通りプライバシーポリシーを定めます。
+                </div>
+
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-2 mb-2">1. 基本方針（ローカル優先設計）</h2>
+                    <p>当プロジェクトのソフトウェアは、「ローカル優先（Local-First）・ゼロテレメトリ」を設計原則としています。業務上の機密文書や日常の操作ログをお預かりするツールであるからこそ、不要な外部クラウド通信を徹底的に排除し、すべてのデータをユーザーの手元のデバイス内に留める設計を採用しています。</p>
+                </section>
+
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-2 mb-2">2. 収集・外部送信しない情報</h2>
+                    <p>Omni Series ソフトウェアは、以下の情報を一切収集、蓄積、外部サーバー送信しません：</p>
+                    <ul class="list-disc pl-5 space-y-1.5">
+                        <li><strong>ファイルおよびフォルダの内容:</strong> 閲覧・編集・検索・比較したファイルデータやメタデータはすべて端末内で処理されます。</li>
+                        <li><strong>キーボード入力およびマウス操作ログ:</strong> マウス・キーボード共有機能（Omni Warp Helm 等）での操作データは、同一ローカルネットワーク（LAN）内の端末間でのみ直接転送され、記録や外部送信は行われません。</li>
+                        <li><strong>クリップボード内容および画面ミラー映像:</strong> 暗号化されて同一ネットワーク内の端末間でのみ直接送受信され、外部サーバーを経由しません。</li>
+                        <li><strong>個人を特定できる情報:</strong> 氏名、住所、電話番号、位置情報等の個人情報はアプリ単体では取得しません。</li>
+                        <li><strong>画面文字読み取り（OCR）データ:</strong> 標準機能では Windows 内蔵のエンジンを使用し、すべてオフライン端末内で処理されます。</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-2 mb-2">3. 外部通信が発生する例外的なケース</h2>
+                    <p>ソフトウェアにおいて外部ネットワーク通信が発生するのは、以下の限定されたケースのみです：</p>
+                    <ul class="list-disc pl-5 space-y-1.5">
+                        <li><strong>オンライン決済およびライセンス認証:</strong> Stripe（Stripe, Inc.）または Microsoft Store を通じた有料ライセンスの購入手続きおよび定期的な有効性確認の通信（HTTPS暗号化通信）。</li>
+                        <li><strong>ユーザーが任意で設定した外部 API 連携:</strong> 高精度 AI OCR 等でお客様ご自身が取得した API キー（例：Google Gemini API）を設定した場合に限り、選択された画像領域のみが該当プロバイダーの公式 API サーバーへ直接 HTTPS 暗号化送信されます。当プロジェクトのサーバーを経由することはありません。</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-2 mb-2">4. 通信のセキュリティと暗号化</h2>
+                    <p>PC 間のすべての通信（マウス・キーボード操作、クリップボード同期、画面ミラーデータ）は、高度な暗号化（AES-256）によって保護されます。通信は同一 Wi-Fi または有線 LAN 内でピア・ツー・ピア（P2P）直接行われ、第三者のサーバーを経由することはありません。</p>
+                </section>
+
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-2 mb-2">5. 公式ウェブサイトにおけるアクセス解析</h2>
+                    <p>本紹介ウェブサイトでは、サイトの利用状況の把握および利便性向上のため、Cookie を使用した一般的なアクセス解析ツール（Google Analytics、Microsoft Clarity 等）を利用する場合があります。取得されるデータは匿名化されており、個人を特定するものではありません。ブラウザの設定により Cookie を無効化することも可能です。</p>
+                </section>
+
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-2 mb-2">6. お問い合わせ窓口</h2>
+                    <p>本プライバシーポリシーに関するご質問やご不明点、個人情報の取扱いに関するご相談は、<a href="https://github.com/omni-series/omni-series.github.io/issues" target="_blank" rel="noopener" class="text-blue-600 underline">GitHub Issues</a> または各製品のサポート窓口よりお問い合わせください。</p>
+                </section>
+
+                <div class="mt-8 pt-6 border-t border-slate-200 text-xs text-slate-500">
+                    <p>製品ごとの詳細なプライバシー条項については、各製品ページ（<a href="omnipane/privacy.html" class="text-blue-600 underline">OmniPane Explorer</a> / <a href="warphelm/privacy.html" class="text-blue-600 underline">Omni Warp Helm</a> / <a href="filestudio/privacy.html" class="text-blue-600 underline">Omni File Studio</a>）もご覧ください。</p>
+                </div>
+            </div>
+
+            <!-- English Content -->
+            <div id="content-en" class="hidden prose prose-slate max-w-none space-y-6 text-sm sm:text-base leading-relaxed text-slate-700">
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 text-xs font-mono text-slate-600">
+                    <strong>MASTER PRIVACY POLICY — OMNI SERIES</strong><br>
+                    WinSolutions / Omni Series Project ("we", "us", or "our") develops the "Omni Series" productivity software suite (including OmniPane Explorer, Omni Warp Helm, Omni File Studio, and related utilities) and operates this official website. We consider user privacy and data security paramount and are committed to protecting it under this Privacy Policy.
+                </div>
+
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-2 mb-2">1. Core Principles (Local-First Architecture)</h2>
+                    <p>The Omni Series software is architected from the ground up on the principles of "Local-First" computing and zero telemetry. Because our tools are designed to interact with sensitive professional documents and daily desktop operations, we strictly eliminate unnecessary cloud dependencies and ensure all core data remains within your local custody.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-2 mb-2">2. Information We Never Collect or Upload</h2>
+                    <p>Omni Series applications do not collect, harvest, store, or transmit any of the following data to external servers:</p>
+                    <ul class="list-disc pl-5 space-y-1.5">
+                        <li><strong>File & Folder Contents:</strong> Files, directories, tags, metadata, notes, and search queries are processed strictly on your local PC.</li>
+                        <li><strong>Keystrokes & Mouse Movement Logs:</strong> Input events transmitted via software KM sharing (Omni Warp Helm) communicate strictly within your local network (LAN) and are never logged to disk or uploaded externally.</li>
+                        <li><strong>Clipboard Data & Screen Mirroring Video:</strong> Streamed peer-to-peer across your local area network (LAN/WLAN) with end-to-end encryption without traversing cloud intermediaries.</li>
+                        <li><strong>Personally Identifiable Information (PII):</strong> We do not collect names, home addresses, phone numbers, or device tracking IDs within our software applications.</li>
+                        <li><strong>Screen OCR Data:</strong> Default Optical Character Recognition runs completely offline on your device using native Windows OCR APIs.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-2 mb-2">3. Limited External Network Connectivity</h2>
+                    <p>Outbound network connections occur solely in the following specific circumstances:</p>
+                    <ul class="list-disc pl-5 space-y-1.5">
+                        <li><strong>Payment Processing & License Activation:</strong> Secure checkout and recurring subscription license validation conducted directly via Stripe (Stripe, Inc.) or Microsoft Store via encrypted HTTPS.</li>
+                        <li><strong>User-Configured Third-Party AI APIs:</strong> If you voluntarily configure an optional external AI provider (such as your personal Google Gemini API key for high-accuracy OCR), image snippets are sent directly and securely (HTTPS) to Google's official endpoints. Licensor never intermediates or stores such data.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-2 mb-2">4. Security & Encryption Standards</h2>
+                    <p>All direct peer-to-peer network communication (mouse/keyboard inputs, clipboard synchronization, and screen mirroring streams) is protected using bank-grade AES-256 symmetric encryption. Communications occur entirely within your local Wi-Fi or Ethernet network without third-party server relay.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-2 mb-2">5. Website Analytics & Cookies</h2>
+                    <p>Our promotional website may use standard web analytics tools (such as Google Analytics and Microsoft Clarity) with cookies to analyze aggregate visitor traffic and improve user experience. Data collected is anonymous and does not personally identify individual users. You can disable cookies at any time via your browser settings.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-2 mb-2">6. Contact & Inquiries</h2>
+                    <p>If you have any questions or concerns regarding this Privacy Policy, please contact us via <a href="https://github.com/omni-series/omni-series.github.io/issues" target="_blank" rel="noopener" class="text-blue-600 underline">GitHub Issues</a> or our product support channels.</p>
+                </section>
+
+                <div class="mt-8 pt-6 border-t border-slate-200 text-xs text-slate-500">
+                    <p>For product-specific privacy terms, please refer to <a href="omnipane/privacy.html" class="text-blue-600 underline">OmniPane Explorer Privacy Policy</a> and <a href="warphelm/privacy.html" class="text-blue-600 underline">Omni Warp Helm Privacy Policy</a>.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10 px-4 text-xs mt-auto">
+        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-2">
+                <img src="assets/icons/omniseries_spectrum.svg" alt="" width="20" height="20" class="w-5 h-5">
+                <span class="font-bold text-slate-200">Omni Series by WinSolutions</span>
+                <span>© 2026</span>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-5 text-slate-400">
+                <a href="index.html" class="hover:text-white transition" id="footer-portal-link">ポータル</a>
+                <a href="terms.html" class="hover:text-white transition" id="footer-terms-link">利用規約</a>
+                <a href="privacy.html" class="text-white font-medium transition underline" id="footer-privacy-link">プライバシーポリシー</a>
+                <a href="law.html" class="hover:text-white transition" id="footer-law-link">特定商取引法に基づく表記</a>
+                <a href="https://github.com/omni-series" target="_blank" rel="noopener" class="hover:text-white transition">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const btnJa = document.getElementById('tab-btn-ja');
+            const btnEn = document.getElementById('tab-btn-en');
+            const contentJa = document.getElementById('content-ja');
+            const contentEn = document.getElementById('content-en');
+            const docHeading = document.getElementById('doc-heading');
+            const docDate = document.getElementById('doc-date');
+            const badgeTitle = document.getElementById('badge-title');
+            const navTitle = document.getElementById('nav-current-title');
+            const navTerms = document.getElementById('nav-terms-link');
+            const navLaw = document.getElementById('nav-law-link');
+            const navBack = document.getElementById('nav-back-link');
+            const footerPortal = document.getElementById('footer-portal-link');
+            const footerTerms = document.getElementById('footer-terms-link');
+            const footerPrivacy = document.getElementById('footer-privacy-link');
+            const footerLaw = document.getElementById('footer-law-link');
+            const pageTitle = document.getElementById('page-title');
+
+            function setLanguage(lang) {
+                if (lang === 'en') {
+                    btnEn.className = 'px-4 py-2 rounded-lg font-bold text-sm bg-blue-600 text-white shadow-sm transition';
+                    btnJa.className = 'px-4 py-2 rounded-lg font-semibold text-sm bg-slate-100 text-slate-700 hover:bg-slate-200 transition';
+                    contentEn.classList.remove('hidden');
+                    contentJa.classList.add('hidden');
+                    badgeTitle.textContent = 'Omni Series Privacy Policy';
+                    docHeading.textContent = 'Master Privacy Policy';
+                    docDate.textContent = 'Privacy Policy • Last Updated: November 26, 2026';
+                    navTitle.textContent = 'Privacy Policy';
+                    navTerms.textContent = 'Terms';
+                    navLaw.textContent = 'Legal Notice (Law)';
+                    navBack.textContent = '← Back to Portal';
+                    footerPortal.textContent = 'Portal';
+                    footerTerms.textContent = 'Terms of Service';
+                    footerPrivacy.textContent = 'Privacy Policy';
+                    footerLaw.textContent = 'Specified Commercial Transactions Act';
+                    pageTitle.textContent = 'Privacy Policy - Omni Series';
+                    document.documentElement.lang = 'en';
+                } else {
+                    btnJa.className = 'px-4 py-2 rounded-lg font-bold text-sm bg-blue-600 text-white shadow-sm transition';
+                    btnEn.className = 'px-4 py-2 rounded-lg font-semibold text-sm bg-slate-100 text-slate-700 hover:bg-slate-200 transition';
+                    contentJa.classList.remove('hidden');
+                    contentEn.classList.add('hidden');
+                    badgeTitle.textContent = 'Omni Series Privacy Policy';
+                    docHeading.textContent = 'プライバシーポリシー';
+                    docDate.textContent = 'プライバシーポリシー • 最終改定日: 2026年11月26日';
+                    navTitle.textContent = 'プライバシーポリシー';
+                    navTerms.textContent = '利用規約';
+                    navLaw.textContent = '特定商取引法';
+                    navBack.textContent = '← ポータルへ戻る';
+                    footerPortal.textContent = 'ポータル';
+                    footerTerms.textContent = '利用規約';
+                    footerPrivacy.textContent = 'プライバシーポリシー';
+                    footerLaw.textContent = '特定商取引法に基づく表記';
+                    pageTitle.textContent = 'プライバシーポリシー - Omni Series';
+                    document.documentElement.lang = 'ja';
+                }
+            }
+
+            btnJa.addEventListener('click', () => {
+                setLanguage('ja');
+                localStorage.setItem('omni-site-lang', 'ja');
+            });
+
+            btnEn.addEventListener('click', () => {
+                setLanguage('en');
+                localStorage.setItem('omni-site-lang', 'en');
+            });
+
+            // Initial detection
+            const params = new URLSearchParams(window.location.search);
+            let initialLang = params.get('lang');
+            if (!initialLang) {
+                initialLang = localStorage.getItem('omni-site-lang') ||
+                              localStorage.getItem('owh-site-lang') ||
+                              localStorage.getItem('ope-site-lang');
+            }
+            if (!initialLang) {
+                const nav = (navigator.language || '').toLowerCase();
+                initialLang = nav.startsWith('ja') ? 'ja' : 'en';
+            }
+            setLanguage(initialLang === 'en' ? 'en' : 'ja');
+        })();
+    </script>
+</body>
+</html>
